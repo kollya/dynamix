@@ -34,6 +34,7 @@ var NAVTREE =
         [ "Multicast messages ", "glossary.html#multicast", null ]
       ] ],
       [ "Message priority ", "glossary.html#priority", null ],
+      [ "Message bids ", "glossary.html#bids", null ],
       [ "Multicast result combinators ", "glossary.html#combinators", null ],
       [ "Default message implementation ", "glossary.html#defaultimpl", null ],
       [ "Mutations ", "glossary.html#mutation", [
@@ -42,6 +43,7 @@ var NAVTREE =
     ] ],
     [ "Tutorials", "tutorials.html", [
       [ "Messages ", "tutorials.html#messages", null ],
+      [ "Message bids ", "tutorials.html#message_bids", null ],
       [ "Object mutation ", "tutorials.html#obj_mutation", null ],
       [ "Mutation rules ", "tutorials.html#mut_rules", null ],
       [ "Multicast result combinators ", "tutorials.html#mult_combinators", null ],

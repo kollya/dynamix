@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -145,9 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a051188521a2a6fb7d7e971180f23ae46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a051188521a2a6fb7d7e971180f23ae46"></a>
 <a class="el" href="classdynamix_1_1object.html">object</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classdynamix_1_1object.html">object</a> &amp;o)=delete</td></tr>
 <tr class="separator:a051188521a2a6fb7d7e971180f23ae46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad853b6f2f29cea857d8b8d8d0eb0485a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad853b6f2f29cea857d8b8d8d0eb0485a"></a>
-<a class="el" href="classdynamix_1_1object.html">object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#ad853b6f2f29cea857d8b8d8d0eb0485a">copy</a> () const </td></tr>
-<tr class="memdesc:ad853b6f2f29cea857d8b8d8d0eb0485a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit copy via move assignment. <br /></td></tr>
+<tr class="memitem:ad853b6f2f29cea857d8b8d8d0eb0485a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdynamix_1_1object.html">object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#ad853b6f2f29cea857d8b8d8d0eb0485a">copy</a> () const </td></tr>
 <tr class="separator:ad853b6f2f29cea857d8b8d8d0eb0485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5cfe19ba91115d0512a94697320c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#adf5cfe19ba91115d0512a94697320c2f">copy_from</a> (const <a class="el" href="classdynamix_1_1object.html">object</a> &amp;o)</td></tr>
 <tr class="separator:adf5cfe19ba91115d0512a94697320c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +202,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main object class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad853b6f2f29cea857d8b8d8d0eb0485a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdynamix_1_1object.html">object</a> dynamix::object::copy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Explicit copy via move assignment This function is not recommended as it wil slice the type if you have a class iherited from object </p>
+
+</div>
+</div>
 <a class="anchor" id="adf5cfe19ba91115d0512a94697320c2f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +363,7 @@ template&lt;typename Mixin &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>dynamix</b></li><li class="navelem"><a class="el" href="classdynamix_1_1object.html">object</a></li>
-    <li class="footer">Generated on Tue Jul 18 2017 00:12:15 for DynaMix by
+    <li class="footer">Generated on Thu Aug 17 2017 16:58:51 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

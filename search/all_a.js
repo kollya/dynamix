@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['next_5fbidder_2ehpp',['next_bidder.hpp',['../next__bidder_8hpp.html',1,'']]],
   ['no_5ffeatures_5ft',['no_features_t',['../structdynamix_1_1no__features__t.html',1,'dynamix']]],
   ['noncopyable',['noncopyable',['../structdynamix_1_1internal_1_1noncopyable.html',1,'dynamix::internal']]],
   ['none',['none',['../feature_8hpp.html#aeb7723c2821bfb9ad9bc8ca531621563',1,'dynamix']]],

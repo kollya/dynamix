@@ -9,6 +9,7 @@ var hierarchy =
         [ "dynamix::bad_message_call", "classdynamix_1_1bad__message__call.html", null ],
         [ "dynamix::bad_mutation", "classdynamix_1_1bad__mutation.html", null ],
         [ "dynamix::bad_mutation_source", "classdynamix_1_1bad__mutation__source.html", null ],
+        [ "dynamix::bad_next_bidder_call", "classdynamix_1_1bad__next__bidder__call.html", null ],
         [ "dynamix::unicast_clash", "classdynamix_1_1unicast__clash.html", null ]
       ] ]
     ] ],
@@ -23,7 +24,7 @@ var hierarchy =
     [ "dynamix::combinators::mean< MessageReturnType >", "classdynamix_1_1combinators_1_1mean.html", null ],
     [ "dynamix::internal::message_feature_tag", "structdynamix_1_1internal_1_1message__feature__tag.html", null ],
     [ "dynamix::internal::message_for_mixin", "structdynamix_1_1internal_1_1message__for__mixin.html", null ],
-    [ "dynamix::internal::message_priority< Message >", "structdynamix_1_1internal_1_1message__priority.html", null ],
+    [ "dynamix::internal::message_perks< Message >", "structdynamix_1_1internal_1_1message__perks.html", null ],
     [ "dynamix::internal::message_registrator< Message >", "structdynamix_1_1internal_1_1message__registrator.html", null ],
     [ "dynamix::internal::mixin_data_in_object", "classdynamix_1_1internal_1_1mixin__data__in__object.html", null ],
     [ "dynamix::mutation_rule", "classdynamix_1_1mutation__rule.html", [

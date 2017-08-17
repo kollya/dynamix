@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -119,9 +119,9 @@ Platforms </h1>
 <p>The library has been (and continues to be) developed and tested with and 32 and 64 bit builds with the compilers:</p>
 <ul>
 <li>On Windows: Visual C++ 12 (2013), Visual C++ 14 (2015), mingw-gcc 5.1.0</li>
-<li>On Linux: gcc 4.6.3, gcc 4.7, clang 3.0</li>
-<li>On OSX and iOS: clang 3.0 (XCode 4.2)</li>
-<li>On Android: arm-gcc 4.6.1</li>
+<li>On Linux: gcc 4.6.3, gcc 4.8.4, gcc 4.9, gcc 5, gcc 6, clang 3.0</li>
+<li>On OSX and iOS: clang 3.0, clang 4.0</li>
+<li>On Android: arm-gcc 4.6.1, arm-gcc 4.9</li>
 </ul>
 <p>Other C++11 compliant compilers will most likely also work</p>
 <h1><a class="anchor" id="deps"></a>
@@ -134,6 +134,7 @@ Getting the library </h1>
 Building the library </h1>
 <p>A <code>CMakeLists.txt</code> file for CMake is provided for the library.</p>
 <p>If you want something else, all you need to do is compile and link all the <code>.cpp</code> files from the <code>src</code> directory.</p>
+<p>For most cases a dynamic (shared) library is the preferred way to use DynaMix, but a static library build is also possible.</p>
 <h2><a class="anchor" id="config"></a>
 Configuration </h2>
 <p>Here is a list of the configuration options from <code><a class="el" href="config_8hpp.html">config.hpp</a></code>. <em>You need to rebiuld the library if you change any of those</em>.</p>
@@ -162,7 +163,7 @@ Contacts </h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 18 2017 00:12:14 for DynaMix by
+    <li class="footer">Generated on Thu Aug 17 2017 16:58:49 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div>
 <div class="textblock"><h1><a class="anchor" id="abstract"></a>
 Abstract </h1>
-<p>DynaMix is a library that allows the composition and modification of polymorphic objects at run time. Objects are constructed from building blocks called "mixins" enabling an effect similar to multiple inheritance, while allowing the client code to remain oblivious to the actual composition of the objects.</p>
+<p>DynaMix is a library which allows the composition and modification of polymorphic objects at run time. Objects are constructed from building blocks called "mixins" enabling an effect similar to multiple inheritance, while allowing the client code to remain oblivious to the actual composition of the objects.</p>
 <p>A take on the <a href="http://en.wikipedia.org/wiki/Composition_over_inheritance">Composition over inheritance</a> technique, the result resembles the <a href="http://www.ruby-doc.org/docs/ProgrammingRuby/html/tut_modules.html">mixins in Ruby</a>. It can also be compared to the <a href="http://archive.eiffel.com/doc/online/eiffel50/intro/language/tutorial-10.html">inheritance in Eiffel</a> or the traits in <a href="http://selflanguage.org/_static/tutorial/Language/Prototypes/Organizing.html">Self</a>, <a href="http://www.scala-lang.org/node/126">Scala</a>, <a href="http://php.net/manual/en/language.oop5.traits.php">PHP</a>, <a href="https://en.wikipedia.org/wiki/Trait_(computer_programming)">and many others</a>, or the <a href="http://doc.perl6.org/language/objects#Roles">roles in Perl</a>.</p>
 <p>This is given while also having full abstraction between the interface and the definition of types &ndash; a problem often given as the motivation for the <a href="@http://www.drdobbs.com/cpp/making-pimpl-easy/205918714">PIMPL idiom</a>.</p>
 <p>In short, <em>DynaMix is an alternative way to accomplish polymorphism</em>. It is a means to create a project's <em>architecture</em>, rather than implement its purpose.</p>
@@ -161,10 +161,10 @@ When (and when not) to use DynaMix </h1>
 Comparisons </h1>
 <h2><a class="anchor" id="multiple_inh"></a>
 Comparison with multiple inheritance </h2>
-<p>The closest thing to DynaMix that C++ can offer out of the box is multiple inheritance. A <code><a class="el" href="classdynamix_1_1object.html" title="The main object class. ">dynamix::object</a></code> composed of some mixins, can be thought of as an empty class that's derived from these classes &ndash; the object's interface will be equal to the union of the interfaces of its mixins, and it will internally instantiate them.</p>
-<p>We covered how much more than multiple inheritance the library is in the previous section, but in case you haven't inferred everything, here a comprehensive list of the most important differences between DynaMix and C++ multiple inheritance:</p>
+<p>The closest thing to DynaMix that C++ can offer out of the box is multiple inheritance. A <code><a class="el" href="classdynamix_1_1object.html" title="The main object class. ">dynamix::object</a></code> composed of some mixins, can be thought of as an instance of an empty class that's derived from these classes &ndash; the object's interface will be equal to the union of the interfaces of its mixins, and it will internally instantiate them.</p>
+<p>Here's a comprehensive list of the most important differences between DynaMix and C++ multiple inheritance:</p>
 <ul>
-<li><b>No combinatorial explosion of types</b>: you compose types at runtime, and don't need to explicitly list all possible combination of building-block types.</li>
+<li><b>No combinatorial explosion of types</b>: you compose types at runtime, and don't need to explicitly list all possible combinations of building-block types.</li>
 <li><b>No type-bound interfaces</b>: since the interface is physically separated from the implementation (or type), you don't need to have a single class implement an interface. You could separate it between multiple classes or combine interfaces in a single class.</li>
 <li><b>Live object mutation</b>: change the interface and/or implementation of messages in an object at runtime.</li>
 <li><b>Natural common reference</b>: in order to have containers of your objects composed by multiple inheritance, you need to define a "master type" from which all parents need to be derived by virtual inheritance. Such a type would be a coupling "focal point" and would need to be frequently changed while you develop your software. In DynaMix this is a no-issue, since all objects in the library are of type <code><a class="el" href="classdynamix_1_1object.html" title="The main object class. ">dynamix::object</a></code>.</li>
@@ -192,6 +192,7 @@ DynaMix as an entity-component-system </h2>
 <li>Instead of classes with pure virtual methods, messages are used to represent the functional interface of mixins, and through that &ndash; of objects.</li>
 <li>Because of the previous two differences, <code><a class="el" href="classdynamix_1_1object.html" title="The main object class. ">dynamix::object</a></code>-s can be (and are) completely oblivious to what kinds of mixins there may be, allowing you to truly, physically separate a program's subsystems. The entity in an ECS on the other hand, usually has at least some knowledge of all the possible component types (like the top level parent classes, for example).</li>
 <li>Some entity-component-systems allow several entities to point to the same instance of a component. This is not possible in DynaMix. A mixin instance is bound to an object instance</li>
+<li>Some entity-component-systems allow an entity to contain several instances of the same component type. This too is not possible in DynaMix. An object can have either zero or one instances of a given mixin type.</li>
 </ul>
 <p>Note that some data structures, sometimes called entity-component-systems, are not used to create and manage polymorphic objects, but instead are used to bind a strictly predefined set of concrete components to the same entity for a very performance intensive piece of software. The components are used by different subsystems, that require them to be aligned in dense arrays for faster processing, without cache misses. As we mentioned before, DynaMix isn't designed for such cases, and while in terms of design and ease of use, it is a better choice than such an approach, it cannot help you in their main goal. Still, a non-polymorphic ECS and DynaMix can be (and have been) used together in a signle piece of software where DynaMix is used in the business logic subsystem, while the performance critical low-level parts of the software make use of a non-polymorphic ECS.</p>
 <h2><a class="anchor" id="traits"></a>
@@ -221,7 +222,7 @@ Comparison with Ruby mixins </h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 18 2017 00:12:16 for DynaMix by
+    <li class="footer">Generated on Thu Aug 17 2017 16:58:53 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

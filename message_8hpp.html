@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -123,7 +123,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdynamix_1_1internal_1_1message__t.html">dynamix::internal::message_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdynamix_1_1internal_1_1message__priority.html">dynamix::internal::message_priority&lt; Message &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdynamix_1_1internal_1_1message__perks.html">dynamix::internal::message_perks&lt; Message &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdynamix_1_1internal_1_1message__for__mixin.html">dynamix::internal::message_for_mixin</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +148,22 @@ template&lt;typename Combinator &gt; </td></tr>
 template&lt;typename Combinator &gt; </td></tr>
 <tr class="memitem:ae993ebfad9990cc885e38abf8305221b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!has_set_num_results&lt; Combinator &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dynamix::internal::set_num_results_for</b> (Combinator &amp;, size_t)</td></tr>
 <tr class="separator:ae993ebfad9990cc885e38abf8305221b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5864dec2069fd75a5bc69a23befe849"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae5864dec2069fd75a5bc69a23befe849"></a>
+<tr class="memitem:aa20daab044adb6cb3dc29d7d4d6c954b"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa20daab044adb6cb3dc29d7d4d6c954b"></a>
 template&lt;typename Message &gt; </td></tr>
-<tr class="memitem:ae5864dec2069fd75a5bc69a23befe849"><td class="memTemplItemLeft" align="right" valign="top">internal::message_priority&lt; Message &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dynamix::priority</b> (int p, Message *)</td></tr>
-<tr class="separator:ae5864dec2069fd75a5bc69a23befe849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20daab044adb6cb3dc29d7d4d6c954b"><td class="memTemplItemLeft" align="right" valign="top">internal::message_perks&lt; Message &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dynamix::priority</b> (int p, Message *)</td></tr>
+<tr class="separator:aa20daab044adb6cb3dc29d7d4d6c954b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eaaa3dc8d7de9f03afa01d8832d8b7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a71eaaa3dc8d7de9f03afa01d8832d8b7"></a>
+template&lt;typename Message &gt; </td></tr>
+<tr class="memitem:a71eaaa3dc8d7de9f03afa01d8832d8b7"><td class="memTemplItemLeft" align="right" valign="top">internal::message_perks&lt; Message &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dynamix::bid</b> (int b, Message *)</td></tr>
+<tr class="separator:a71eaaa3dc8d7de9f03afa01d8832d8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef983b0eb60f64bbf846aeb39871bbfb"><td class="memTemplParams" colspan="2"><a class="anchor" id="aef983b0eb60f64bbf846aeb39871bbfb"></a>
+template&lt;typename Message &gt; </td></tr>
+<tr class="memitem:aef983b0eb60f64bbf846aeb39871bbfb"><td class="memTemplItemLeft" align="right" valign="top">internal::message_perks&lt; Message &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dynamix::priority</b> (int p, internal::message_perks&lt; Message &gt; perks)</td></tr>
+<tr class="separator:aef983b0eb60f64bbf846aeb39871bbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44983318026a850c5a54b3922c8d3348"><td class="memTemplParams" colspan="2"><a class="anchor" id="a44983318026a850c5a54b3922c8d3348"></a>
+template&lt;typename Message &gt; </td></tr>
+<tr class="memitem:a44983318026a850c5a54b3922c8d3348"><td class="memTemplItemLeft" align="right" valign="top">internal::message_perks&lt; Message &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dynamix::bid</b> (int b, internal::message_perks&lt; Message &gt; perks)</td></tr>
+<tr class="separator:a44983318026a850c5a54b3922c8d3348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -167,7 +179,7 @@ struct DYNAMIX_API&#160;</td><td class="memItemRight" valign="bottom"><b>dynamix
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1311ec3b1f3820375d35d4193290438d.html">dynamix</a></li><li class="navelem"><a class="el" href="message_8hpp.html">message.hpp</a></li>
-    <li class="footer">Generated on Tue Jul 18 2017 00:12:14 for DynaMix by
+    <li class="footer">Generated on Thu Aug 17 2017 16:58:49 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

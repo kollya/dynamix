@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -103,7 +103,20 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <div class="title">Revision History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>DynaMix 1.1.0 </h1>
+<div class="textblock"><h1>DynaMix 1.2.0 </h1>
+<p>Released: 2017 Aug 17</p>
+<ul>
+<li>Introduced a new feature: Message bids<ul>
+<li>Overriding multicast functions is now possible</li>
+<li>Added <code>DYNAMIX_CALL_NEXT_BIDDER</code> which works for unicasts and multicasts</li>
+<li>Added bids tutorial</li>
+</ul>
+</li>
+<li>Dropped CMake 2.x support. Transition to modern CMake (3.2+)</li>
+<li>Fixed a bug which caused a leak when defining an invalid type (when a mutation causes an exception to be thrown)</li>
+</ul>
+<h1>DynaMix 1.1.0 </h1>
+<p>Released: 2017 Apr 07</p>
 <ul>
 <li>Dropped support for an obscure optimization feature which allowed for the same mixins and messages to be defined multiple times in multiple modules (i.e. in a static library linked to those modules)</li>
 <li>Fixed bug with crashes when unloading and then reloading a plugin which defines a message.</li>
@@ -117,11 +130,13 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <li>Added optional additional metrics to object and mixin type data to show the number of objects and mixins, respectively, of a given type.</li>
 </ul>
 <h1>DynaMix 1.0.4 </h1>
+<p>Released: 2017 Feb 25</p>
 <ul>
 <li>Added check for object copy safety.</li>
 <li>Added two new common mutation rules <code>bundled_mixins</code> and <code>dependent_mixins</code>.</li>
 </ul>
 <h1>DynaMix 1.0.3 </h1>
+<p>Released: 2017 Jan 26</p>
 <ul>
 <li>Added a optional header with message macros with no arity. Its use is not recommended because it breaks all known code-completion tools.</li>
 <li>Optimized around local static variables in feature registration and the domain singleton. As a result mutation is about 5% faster and, more importantly, message calls are about 12% faster.</li>
@@ -129,12 +144,14 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <li><code>global_allocator::mixin_data_size</code> is now <code>constexpr</code></li>
 </ul>
 <h1>DynaMix 1.0.2 </h1>
+<p>Released: 2017 Jan 16</p>
 <ul>
 <li>Added copying of objects</li>
 <li>Added <code>num_implementers</code> to <code>object</code> to check the number of mixins which implement a message</li>
 <li>Added optional call to <code>set_num_results</code> to multicast result combinators</li>
 </ul>
 <h1>DynaMix 1.0.1 </h1>
+<p>Released: 2016</p>
 <ul>
 <li>Removed build tools other than CMake</li>
 <li>Removed C++98/03 support. Switch to C++11 only.</li>
@@ -142,13 +159,14 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <li>Library rebranded</li>
 </ul>
 <h1>DynaMix 1.0.0 </h1>
+<p>Released: 2013</p>
 <p>First official release of the library (as Boost.Mixin) </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 18 2017 00:12:14 for DynaMix by
+    <li class="footer">Generated on Thu Aug 17 2017 16:58:50 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

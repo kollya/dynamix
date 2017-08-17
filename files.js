@@ -34,6 +34,7 @@ var files =
     [ "mixin.hpp", "mixin_8hpp.html", "mixin_8hpp" ],
     [ "mixin_type_info.hpp", "mixin__type__info_8hpp.html", "mixin__type__info_8hpp" ],
     [ "mutation_rule.hpp", "mutation__rule_8hpp.html", "mutation__rule_8hpp" ],
+    [ "next_bidder.hpp", "next__bidder_8hpp.html", "next__bidder_8hpp" ],
     [ "object_mutator.hpp", "object__mutator_8hpp.html", [
       [ "object_mutator", "classdynamix_1_1internal_1_1object__mutator.html", "classdynamix_1_1internal_1_1object__mutator" ]
     ] ],

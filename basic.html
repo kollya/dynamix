@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -121,7 +121,8 @@ $(document).ready(function(){initNavTree('basic.html','');});
 <div class="fragment"><div class="line"><a class="code" href="classdynamix_1_1single__object__mutator.html">dynamix::mutate</a>(sound_player)</div><div class="line">    .remove&lt;headphones_output&gt;()</div><div class="line">    .add&lt;speakers_output&gt;();</div><div class="line"></div><div class="line">play(sound_player);</div></div><!-- fragment --><p> The music is now being played through speakers instead of headphones.</p>
 <p>Naturally we could also mutate the object by changing the media provider part:</p>
 <div class="fragment"><div class="line"><a class="code" href="classdynamix_1_1single__object__mutator.html">dynamix::mutate</a>(sound_player)</div><div class="line">    .remove&lt;cd_reader&gt;()</div><div class="line">    .add&lt;mp3_reader&gt;();</div><div class="line"></div><div class="line">sound_player.<a class="code" href="classdynamix_1_1object.html#af9c81f8a4905785e36e5e66034584776">get</a>&lt;mp3_reader&gt;()-&gt;copy_mp3(<span class="stringliteral">&quot;Led Zeppelin - Black Dog.mp3&quot;</span>);</div><div class="line"></div><div class="line">play(sound_player);</div></div><!-- fragment --><p> And have "Black Dog" played through the existing mixin <code>speakers_output</code>.</p>
-<p>Compared to a classic approach to a similar problem: multiple inheritance this saves us a lot of classes &ndash; in this case four for all the combinations of types of media and types of speakers, which might not sound like much, but keep in mind that the library is appropriate for big systems, that may have hundreds or even thousands of possible combinations. The last thing we'll cover in this basic example is how the speakers-specific players knew what sound to play. Remember the message we defined earlier, that was supposed to be used to retrieve the sound from the media-specific players &ndash; <code>get_sound</code>. It wasn't used before, but it is used by the speakers to obtain the sound polymorphically.</p>
+<p>Compared to a classic approach to a similar problem &ndash; multiple inheritance &ndash; this saves us a lot of classes; in this case four for all the combinations of types of media and types of speakers, which might not sound like much, but keep in mind that the library is appropriate for big systems, that may have hundreds or even thousands of possible combinations.</p>
+<p>The last thing we'll cover in this basic example is how the speakers-specific players "know" what sound to play. Remember the message we defined earlier, that was supposed to be used to retrieve the sound from the media-specific players &ndash; <code>get_sound</code>. It wasn't used before, but it is used by the speakers to obtain the sound polymorphically.</p>
 <p>All mixins may use a special macro that refers to their owning object &ndash; <code>dm_this</code>. Thus the following (pseudo) methods are possible:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> headphones_output::play()</div><div class="line">{</div><div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;playing &quot;</span> &lt;&lt; get_sound(<a class="code" href="mixin_8hpp.html#a8396cc680f14240e8e91a5bfdce4917d" title="a pointer to the owning object of the current mixin ">dm_this</a>)</div><div class="line">        &lt;&lt; <span class="stringliteral">&quot; through headphones&quot;</span> &lt;&lt; endl;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> speakers_output::play()</div><div class="line">{</div><div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;PLAYING &quot;</span> &lt;&lt; get_sound(<a class="code" href="mixin_8hpp.html#a8396cc680f14240e8e91a5bfdce4917d" title="a pointer to the owning object of the current mixin ">dm_this</a>)</div><div class="line">        &lt;&lt; <span class="stringliteral">&quot; THROUGH SPEAKERS&quot;</span> &lt;&lt; endl;</div><div class="line">}</div></div><!-- fragment --><p> And this covers the most basic usage of DynaMix. </p>
 </div></div><!-- contents -->
@@ -129,7 +130,7 @@ $(document).ready(function(){initNavTree('basic.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 18 2017 00:12:14 for DynaMix by
+    <li class="footer">Generated on Thu Aug 17 2017 16:58:49 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

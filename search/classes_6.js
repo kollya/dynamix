@@ -5,7 +5,7 @@ var searchData=
   ['mean',['mean',['../classdynamix_1_1combinators_1_1mean.html',1,'dynamix::combinators']]],
   ['message_5ffeature_5ftag',['message_feature_tag',['../structdynamix_1_1internal_1_1message__feature__tag.html',1,'dynamix::internal']]],
   ['message_5ffor_5fmixin',['message_for_mixin',['../structdynamix_1_1internal_1_1message__for__mixin.html',1,'dynamix::internal']]],
-  ['message_5fpriority',['message_priority',['../structdynamix_1_1internal_1_1message__priority.html',1,'dynamix::internal']]],
+  ['message_5fperks',['message_perks',['../structdynamix_1_1internal_1_1message__perks.html',1,'dynamix::internal']]],
   ['message_5fregistrator',['message_registrator',['../structdynamix_1_1internal_1_1message__registrator.html',1,'dynamix::internal']]],
   ['message_5ft',['message_t',['../structdynamix_1_1internal_1_1message__t.html',1,'dynamix::internal']]],
   ['mixin_5fallocator',['mixin_allocator',['../classdynamix_1_1mixin__allocator.html',1,'dynamix']]],
