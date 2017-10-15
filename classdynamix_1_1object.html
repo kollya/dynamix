@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.2.1</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -168,10 +168,16 @@ template&lt;typename Mixin &gt; </td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#a2ddd93d9cf87fe3c6c96d2b54e14221a">has</a> (mixin_id id) const </td></tr>
 <tr class="memdesc:a2ddd93d9cf87fe3c6c96d2b54e14221a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the object has a specific mixin by id. <br /></td></tr>
 <tr class="separator:a2ddd93d9cf87fe3c6c96d2b54e14221a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe85d92924d686a67df948334543c3e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#afe85d92924d686a67df948334543c3e9">has</a> (const char *mixin_name) const </td></tr>
+<tr class="separator:afe85d92924d686a67df948334543c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde7d63b8d22b3d56383def6624f4ab4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#adde7d63b8d22b3d56383def6624f4ab4">get</a> (mixin_id id)</td></tr>
 <tr class="separator:adde7d63b8d22b3d56383def6624f4ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa278498d7727591552fa462e22751736"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#aa278498d7727591552fa462e22751736">get</a> (mixin_id id) const </td></tr>
 <tr class="separator:aa278498d7727591552fa462e22751736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab253d6a73d96f934b4c4c4d74c630be4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#ab253d6a73d96f934b4c4c4d74c630be4">get</a> (const char *mixin_name)</td></tr>
+<tr class="separator:ab253d6a73d96f934b4c4c4d74c630be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5c8b2642a6cd612164bf4989aaab4c"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#aef5c8b2642a6cd612164bf4989aaab4c">get</a> (const char *mixin_name) const </td></tr>
+<tr class="separator:aef5c8b2642a6cd612164bf4989aaab4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be19f0655007dea6d2c45cfcf1b0d48"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0be19f0655007dea6d2c45cfcf1b0d48"></a>
 template&lt;typename Feature &gt; </td></tr>
 <tr class="memitem:a0be19f0655007dea6d2c45cfcf1b0d48"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdynamix_1_1object.html#a0be19f0655007dea6d2c45cfcf1b0d48">implements</a> (const Feature *) const </td></tr>
@@ -320,6 +326,23 @@ template&lt;typename Mixin &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="afe85d92924d686a67df948334543c3e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dynamix::object::has </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mixin_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if the object has a specific mixin by mixin name (name of the class or dynamix_mixin_name if <code>DYNAMIX_USE_TYPEID</code> is false). </p>
+
+</div>
+</div>
 <a class="anchor" id="adde7d63b8d22b3d56383def6624f4ab4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +356,7 @@ template&lt;typename Mixin &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets a specific mixin by id from the object. Returns nullptr if the mixin isn't available. It is the user's responsibility to cast the returned value to the appropriate type </p>
+<p>Gets a specific mixin by id from the object. Returns nullptr if the mixin isn't available. It is the user's responsibility to cast the returned value to the appropriate type. </p>
 
 </div>
 </div>
@@ -350,7 +373,43 @@ template&lt;typename Mixin &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets a specific mixin by id from the object. Returns nullptr if the mixin isn't available. It is the user's responsibility to cast the returned value to the appropriate type </p>
+<p>Gets a specific mixin by id from the object. Returns nullptr if the mixin isn't available. It is the user's responsibility to cast the returned value to the appropriate type. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab253d6a73d96f934b4c4c4d74c630be4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dynamix::object::get </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mixin_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets a specific mixin by mixin name from the object. Returns nullptr if the mixin isn't available. It is the user's responsibility to cast the returned value to the appropriate type.</p>
+<p>The mixin name is the name of the actual mixin class or the result of dynamix_mixin_name if <code>DYNAMIX_USE_TYPEID</code> is false. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef5c8b2642a6cd612164bf4989aaab4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* dynamix::object::get </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mixin_name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets a specific mixin by mixin name from the object. Returns nullptr if the mixin isn't available. It is the user's responsibility to cast the returned value to the appropriate type.</p>
+<p>The mixin name is the name of the actual mixin class or the result of dynamix_mixin_name if <code>DYNAMIX_USE_TYPEID</code> is false. </p>
 
 </div>
 </div>
@@ -363,7 +422,7 @@ template&lt;typename Mixin &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>dynamix</b></li><li class="navelem"><a class="el" href="classdynamix_1_1object.html">object</a></li>
-    <li class="footer">Generated on Thu Aug 17 2017 20:44:34 for DynaMix by
+    <li class="footer">Generated on Sun Oct 15 2017 17:28:58 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

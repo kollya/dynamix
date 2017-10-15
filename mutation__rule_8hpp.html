@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.2.1</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -114,6 +114,7 @@ $(document).ready(function(){initNavTree('mutation__rule_8hpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="global_8hpp.html">global.hpp</a>&quot;</code><br />
 <code>#include &quot;mixin_collection.hpp&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -123,18 +124,24 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a25da62f083fc5c54b88d45cc8943a6e0"><td class="memItemLeft" align="right" valign="top">void DYNAMIX_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__rule_8hpp.html#a25da62f083fc5c54b88d45cc8943a6e0">dynamix::add_new_mutation_rule</a> (mutation_rule *rule)</td></tr>
-<tr class="separator:a25da62f083fc5c54b88d45cc8943a6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe4381680e895a2ccb8bc618f2ab48f"><td class="memItemLeft" align="right" valign="top">mutation_rule_id DYNAMIX_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__rule_8hpp.html#a6fe4381680e895a2ccb8bc618f2ab48f">dynamix::add_new_mutation_rule</a> (mutation_rule *rule)</td></tr>
+<tr class="separator:a6fe4381680e895a2ccb8bc618f2ab48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e4064830a2b5239032f6a56f6d440b"><td class="memItemLeft" align="right" valign="top">mutation_rule_id DYNAMIX_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__rule_8hpp.html#a17e4064830a2b5239032f6a56f6d440b">dynamix::add_mutation_rule</a> (mutation_rule *rule)</td></tr>
+<tr class="separator:a17e4064830a2b5239032f6a56f6d440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756e2ea0f0d52be5a3315d8c3f90c54f"><td class="memItemLeft" align="right" valign="top">mutation_rule_id DYNAMIX_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__rule_8hpp.html#a756e2ea0f0d52be5a3315d8c3f90c54f">dynamix::add_mutation_rule</a> (std::shared_ptr&lt; mutation_rule &gt; rule)</td></tr>
+<tr class="separator:a756e2ea0f0d52be5a3315d8c3f90c54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef7297f259a22a572157d471aab7ccc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; mutation_rule &gt; DYNAMIX_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__rule_8hpp.html#a2ef7297f259a22a572157d471aab7ccc">dynamix::remove_mutation_rule</a> (mutation_rule_id id)</td></tr>
+<tr class="separator:a2ef7297f259a22a572157d471aab7ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions and classes related to mutation rules. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_a25da62f083fc5c54b88d45cc8943a6e0"></a>
+<a class="anchor" id="file_a6fe4381680e895a2ccb8bc618f2ab48f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DYNAMIX_API dynamix::add_new_mutation_rule </td>
+          <td class="memname">mutation_rule_id DYNAMIX_API dynamix::add_new_mutation_rule </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdynamix_1_1mutation__rule.html">mutation_rule</a> *&#160;</td>
           <td class="paramname"><em>rule</em></td><td>)</td>
@@ -142,8 +149,61 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds a mutation rule to the domain.</p>
+<p>DEPRECATED: Adds a mutation rule to the domain. Takes ownership of the pointer and assumes it's created with <code>new</code>. Returns the mutation rule id by whitch it can be removed.</p>
 <p>Does <em>not</em> perform a topological sort of the rules. It is the user's responsibility to add the mutation rules in the appropriate order. </p>
+
+</div>
+</div>
+<a class="anchor" id="file_a17e4064830a2b5239032f6a56f6d440b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutation_rule_id DYNAMIX_API dynamix::add_mutation_rule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdynamix_1_1mutation__rule.html">mutation_rule</a> *&#160;</td>
+          <td class="paramname"><em>rule</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a mutation rule to the domain. Takes ownership of the pointer and assumes it's created with <code>new</code>. Returns the mutation rule id by whitch it can be removed.</p>
+<p>Does <em>not</em> perform a topological sort of the rules. It is the user's responsibility to add the mutation rules in the appropriate order. </p>
+
+</div>
+</div>
+<a class="anchor" id="file_a756e2ea0f0d52be5a3315d8c3f90c54f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutation_rule_id DYNAMIX_API dynamix::add_mutation_rule </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdynamix_1_1mutation__rule.html">mutation_rule</a> &gt;&#160;</td>
+          <td class="paramname"><em>rule</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a mutation rule to the domain via a shared pointer. Returns the mutation rule id by whitch it can be removed.</p>
+<p>Does <em>not</em> perform a topological sort of the rules. It is the user's responsibility to add the mutation rules in the appropriate order. </p>
+
+</div>
+</div>
+<a class="anchor" id="file_a2ef7297f259a22a572157d471aab7ccc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;mutation_rule&gt; DYNAMIX_API dynamix::remove_mutation_rule </td>
+          <td>(</td>
+          <td class="paramtype">mutation_rule_id&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes a mutation rule from the domain by id. Returns a shared pointer to the rule which the user might use to persist it, or null if no such mutation rule exists </p>
 
 </div>
 </div>
@@ -153,7 +213,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1311ec3b1f3820375d35d4193290438d.html">dynamix</a></li><li class="navelem"><a class="el" href="mutation__rule_8hpp.html">mutation_rule.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 17 2017 20:44:32 for DynaMix by
+    <li class="footer">Generated on Sun Oct 15 2017 17:28:56 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

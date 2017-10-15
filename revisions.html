@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.0</span>
+   &#160;<span id="projectnumber">1.2.1</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -103,7 +103,15 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <div class="title">Revision History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>DynaMix 1.2.0 </h1>
+<div class="textblock"><h1>DynaMix 1.2.1 </h1>
+<p>Released: 2017 Oct 15</p>
+<ul>
+<li>Improved mutation rules: They can now be added, removed and persisted via shared pointers</li>
+<li>Added <code>object::has</code> and <code>object::get</code> with <code>const char*</code> to query mixins by name</li>
+<li><code>add_new_mutation_rule</code> is now deprecated</li>
+<li>Fixed library version header</li>
+</ul>
+<h1>DynaMix 1.2.0 </h1>
 <p>Released: 2017 Aug 17</p>
 <ul>
 <li>Introduced a new feature: Message bids<ul>
@@ -166,7 +174,7 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 17 2017 20:44:33 for DynaMix by
+    <li class="footer">Generated on Sun Oct 15 2017 17:28:57 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,6 +1,8 @@
 var classdynamix_1_1internal_1_1domain =
 [
-    [ "add_new_mutation_rule", "classdynamix_1_1internal_1_1domain.html#ae59d18a6bad106098904b2873b3e9c87", null ],
+    [ "add_mutation_rule", "classdynamix_1_1internal_1_1domain.html#a6bc6d20815599496f40e1b94341f81bc", null ],
+    [ "add_mutation_rule", "classdynamix_1_1internal_1_1domain.html#a229b08f45277b4701e6b3a7fee374b8e", null ],
+    [ "remove_mutation_rule", "classdynamix_1_1internal_1_1domain.html#a75e9e33e3cf3128f1abf5ae13a1e7444", null ],
     [ "apply_mutation_rules", "classdynamix_1_1internal_1_1domain.html#a84eb4721bdf09a49c905ec8935e81a5b", null ],
     [ "num_registered_mixins", "classdynamix_1_1internal_1_1domain.html#aa7ca1e221c7d5e4f69eecca108220aeb", null ],
     [ "register_mixin_type", "classdynamix_1_1internal_1_1domain.html#af5d26eab0564ec32a9184897036a51dd", null ],

@@ -132,7 +132,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classdynamix_1_1object__type__mutation.html#aa535840bec1010220b29e7c7f1919cf6"
+"classdynamix_1_1object__type__mutation.html#a52333227547b3277bba59d3d0f3da93e",
+"using.html#platforms"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
