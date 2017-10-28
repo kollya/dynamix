@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.2</span>
+   &#160;<span id="projectnumber">1.2.3</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -118,12 +118,12 @@ $(document).ready(function(){initNavTree('using.html','');});
 Platforms </h1>
 <p>The library has been (and continues to be) developed and tested with and 32 and 64 bit builds with the compilers:</p>
 <ul>
-<li>On Windows: Visual C++ 12 (2013), Visual C++ 14 (2015), mingw-gcc 5.1.0</li>
-<li>On Linux: gcc 4.6.3, gcc 4.8.4, gcc 4.9, gcc 5, gcc 6, clang 3.0</li>
-<li>On OSX and iOS: clang 3.0, clang 4.0</li>
-<li>On Android: arm-gcc 4.6.1, arm-gcc 4.9</li>
+<li>On Windows: Visual C++ 14 (2015) and newer, mingw-gcc 5.1.0 and newer</li>
+<li>On Linux: gcc 4.9 amd newer, clang 3.0 and newer</li>
+<li>On OSX and iOS: clang 3.0 and newer</li>
+<li>On Android: arm-gcc 4.9 and newer</li>
 </ul>
-<p>Other C++11 compliant compilers will most likely also work</p>
+<p>Other C++11 compliant compilers (like icc) will most likely also work.</p>
 <h1><a class="anchor" id="deps"></a>
 Dependencies </h1>
 <p>The library has no external dependencies other than the standard C++ libraries.</p>
@@ -135,6 +135,7 @@ Building the library </h1>
 <p>A <code>CMakeLists.txt</code> file for CMake is provided for the library.</p>
 <p>If you want something else, all you need to do is compile and link all the <code>.cpp</code> files from the <code>src</code> directory.</p>
 <p>For most cases a dynamic (shared) library is the preferred way to use DynaMix, but a static library build is also possible.</p>
+<p>Note that if you're not using CMake and you want DynaMix as a dynamic library, you will have to make sure that <code>DYNAMIX_DYNLIB</code> is defined when building the library and the projects which use it (say by adding <code>-DDYNAMIX_DYNLIB</code> to the compiler's command line). If you're building it as a static libray (or embedded in your own project) no additional steps are necessary.</p>
 <h2><a class="anchor" id="config"></a>
 Configuration </h2>
 <p>Here is a list of the configuration options from <code><a class="el" href="config_8hpp.html">config.hpp</a></code>. <em>You need to rebiuld the library if you change any of those</em>.</p>
@@ -151,10 +152,15 @@ Configuration </h2>
 </li>
 <li><code>DYNAMIX_ADDITIONAL_METRICS</code>  allows the access to some useful metrics about the library's usage such as number of "living" objects or mixins of a given type.</li>
 </ul>
+<p>If you don't want to edit <code><a class="el" href="config_8hpp.html">config.hpp</a></code> in the library source (or you're using it as a submodule and can't edit it), you can add a custom configuration file by defining <code>DYNAMIX_CUSTOM_CONFIG_FILE</code> when building and using the library. Define it to a string containing you own configuration, which can define any (or all) of the above options. If you're using CMake to build the library you can add <code>-DDYNAMIX_CUSTOM_CONFIG_FILE="path/to/your/file.hpp"</code> to your command line to set the custom configuration header.</p>
 <h1><a class="anchor" id="using"></a>
 Using the library </h1>
 <p>To use the library in your programs, you only need to include its main header: <code><a class="el" href="dynamix_8hpp.html">dynamix/dynamix.hpp</a></code>.</p>
 <p>No special initialization or deinitialization code is needed.</p>
+<p>Before including the header you can optionally this configuration option. <em>No need to rebuild the library if you change it. Only projects which use it</em>:</p>
+<ul>
+<li><code>DYNAMIX_NO_MSG_THROW</code> - defining this will disable exceptions which can be thrown by messages and replace them with <code>assert</code>-s. This will message calls slightly faster but if a situation which leadst to <code><a class="el" href="classdynamix_1_1bad__message__call.html" title="Thrown when a message is called on a object that doesn&#39;t implement it. ">dynamix::bad_message_call</a></code> arises and <code>assert</code>-s are disabled (ie Release mode), it will lead to undefined behvaior and most likely crashes</li>
+</ul>
 <h1><a class="anchor" id="contact"></a>
 Contacts </h1>
 <p>For questions and comments you're welcome to use the <a href="https://github.com/iboB/dynamix/issues">GitHub issue tracker of the library</a>. </p>
@@ -163,7 +169,7 @@ Contacts </h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 18 2017 14:48:57 for DynaMix by
+    <li class="footer">Generated on Sat Oct 28 2017 10:56:42 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
