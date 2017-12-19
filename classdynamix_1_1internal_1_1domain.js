@@ -11,7 +11,7 @@ var classdynamix_1_1internal_1_1domain =
     [ "unregister_feature", "classdynamix_1_1internal_1_1domain.html#a9614b22b1bbd39222435a89943631762", null ],
     [ "get_object_type_info", "classdynamix_1_1internal_1_1domain.html#a797905392e896aed8d791d58f7f0f412", null ],
     [ "mixin_info", "classdynamix_1_1internal_1_1domain.html#aeca1f5320cc428759a52bf2437e487a7", null ],
-    [ "set_allocator", "classdynamix_1_1internal_1_1domain.html#ac561fe1d7fbd8780c3eebf802c6062e4", null ],
-    [ "allocator", "classdynamix_1_1internal_1_1domain.html#a4d5dd3dfbe33a749d70df723ca8c0afe", null ],
+    [ "set_allocator", "classdynamix_1_1internal_1_1domain.html#a3002d7350af6e51c70e7966b4ced9c8c", null ],
+    [ "allocator", "classdynamix_1_1internal_1_1domain.html#a3c769963383699bbf958975388ad568a", null ],
     [ "get_mixin_id_by_name", "classdynamix_1_1internal_1_1domain.html#a7e861a8ed959af6881f4d5019a516898", null ]
 ];

@@ -7,5 +7,6 @@ var classdynamix_1_1internal_1_1mixin__data__in__object =
     [ "buffer", "classdynamix_1_1internal_1_1mixin__data__in__object.html#ad1283357ab8375d479625dbb65f44e30", null ],
     [ "mixin", "classdynamix_1_1internal_1_1mixin__data__in__object.html#a48749a591eb11cfdddbb4031d47cead3", null ],
     [ "buffer", "classdynamix_1_1internal_1_1mixin__data__in__object.html#a98f7b4af285406a1552370d8397f3c1f", null ],
-    [ "mixin", "classdynamix_1_1internal_1_1mixin__data__in__object.html#a63cea9b1ec7a921b8e9231eb7f0e7b8d", null ]
+    [ "mixin", "classdynamix_1_1internal_1_1mixin__data__in__object.html#a63cea9b1ec7a921b8e9231eb7f0e7b8d", null ],
+    [ "mixin_offset", "classdynamix_1_1internal_1_1mixin__data__in__object.html#af9b27804e338d4453cf4f112395d0469", null ]
 ];

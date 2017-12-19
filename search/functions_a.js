@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['set_5fglobal_5fallocator',['set_global_allocator',['../domain_8hpp.html#a407a270bc4f4a996f843bb20c5fb6380',1,'dynamix']]],
-  ['set_5fmaster',['set_master',['../classdynamix_1_1dependent__mixins.html#ab677a0c5190cefb267a6420c8a51ecef',1,'dynamix::dependent_mixins']]],
-  ['set_5fnum_5fresults',['set_num_results',['../classdynamix_1_1combinators_1_1mean.html#a8a0c428d128e3faaa603295afbae6b63',1,'dynamix::combinators::mean']]],
-  ['set_5fsource',['set_source',['../classdynamix_1_1object__type__mutation.html#a2cfec7729dafa0d66366a768547a9bdf',1,'dynamix::object_type_mutation']]],
-  ['source_5fhas',['source_has',['../classdynamix_1_1object__type__mutation.html#ab8b0033c5e14006504484145e74fa5e6',1,'dynamix::object_type_mutation']]],
-  ['source_5fimplements',['source_implements',['../classdynamix_1_1object__type__mutation.html#a52333227547b3277bba59d3d0f3da93e',1,'dynamix::object_type_mutation']]],
-  ['start_5fadding',['start_adding',['../classdynamix_1_1object__type__mutation.html#a79d8cbfbfde17336587561b0d0e0810e',1,'dynamix::object_type_mutation']]],
-  ['start_5fremoving',['start_removing',['../classdynamix_1_1object__type__mutation.html#ab293c80c5627f5a81a30064c30ddd3a1',1,'dynamix::object_type_mutation::start_removing()'],['../classdynamix_1_1object__type__mutation.html#a4f7a0166e229cbed3ccd30682248fad8',1,'dynamix::object_type_mutation::start_removing(const Feature *f)']]],
-  ['stop_5fadding',['stop_adding',['../classdynamix_1_1object__type__mutation.html#a59977b4011adadcfa28f002b7178a810',1,'dynamix::object_type_mutation::stop_adding()'],['../classdynamix_1_1object__type__mutation.html#add83b2a2cba34fdbc2473f7e781fee0e',1,'dynamix::object_type_mutation::stop_adding(const Feature *f)']]],
-  ['stop_5fremoving',['stop_removing',['../classdynamix_1_1object__type__mutation.html#acd695a15746ec11cbdc6aadd5820005e',1,'dynamix::object_type_mutation::stop_removing()'],['../classdynamix_1_1object__type__mutation.html#aa8cb1d4e94c18123ef95133527022ab8',1,'dynamix::object_type_mutation::stop_removing(const Feature *f)']]]
+  ['reallocate_5fmixins',['reallocate_mixins',['../classdynamix_1_1object.html#ac1bde406639cc7f9a3b555eb5cb20d95',1,'dynamix::object']]],
+  ['release',['release',['../classdynamix_1_1object__allocator.html#a0d7e2cff2b2d7f001e5195b5942133f2',1,'dynamix::object_allocator']]],
+  ['remove',['remove',['../classdynamix_1_1mixin__collection.html#a7388e5d2ab1b34e20e1963756fec7ec2',1,'dynamix::mixin_collection']]],
+  ['remove_5fmutation_5frule',['remove_mutation_rule',['../mutation__rule_8hpp.html#a2ef7297f259a22a572157d471aab7ccc',1,'dynamix']]],
+  ['reset',['reset',['../classdynamix_1_1combinators_1_1boolean__and.html#a77afa1ddbe62cc5238827d3ffa6054ca',1,'dynamix::combinators::boolean_and::reset()'],['../classdynamix_1_1combinators_1_1boolean__or.html#ac991a8167280e63e1fd097e7892a0dec',1,'dynamix::combinators::boolean_or::reset()'],['../classdynamix_1_1combinators_1_1sum.html#ac2720d44ec3cd82cb03c0b0bf9bd44e9',1,'dynamix::combinators::sum::reset()'],['../classdynamix_1_1combinators_1_1mean.html#ab866f23448222adc9ed0109bc19384ea',1,'dynamix::combinators::mean::reset()']]],
+  ['result',['result',['../classdynamix_1_1combinators_1_1boolean__and.html#aa73b47bdb80463dc285097035601f61f',1,'dynamix::combinators::boolean_and::result()'],['../classdynamix_1_1combinators_1_1boolean__or.html#aee22e8adc2516803187568941fbccdff',1,'dynamix::combinators::boolean_or::result()'],['../classdynamix_1_1combinators_1_1sum.html#a60cb860ca0168039fb240e67af81b1cc',1,'dynamix::combinators::sum::result()'],['../classdynamix_1_1combinators_1_1mean.html#a3e99d21630dd597c4e935938a7384dd4',1,'dynamix::combinators::mean::result()']]]
 ];

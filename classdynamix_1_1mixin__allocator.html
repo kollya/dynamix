@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.3</span>
+   &#160;<span id="projectnumber">1.3.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -110,7 +110,6 @@ $(document).ready(function(){initNavTree('classdynamix_1_1mixin__allocator.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdynamix_1_1mixin__allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -122,37 +121,37 @@ $(document).ready(function(){initNavTree('classdynamix_1_1mixin__allocator.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a864dab150684539600ae86a732346e6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1global__allocator.html#a864dab150684539600ae86a732346e6d">alloc_mixin</a> (size_t mixin_size, size_t mixin_alignment, char *&amp;out_buffer, size_t &amp;out_mixin_offset)=0</td></tr>
-<tr class="separator:a864dab150684539600ae86a732346e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a739434366f136363c5da4de22c86918f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1global__allocator.html#a739434366f136363c5da4de22c86918f">dealloc_mixin</a> (char *ptr)=0</td></tr>
-<tr class="separator:a739434366f136363c5da4de22c86918f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac45918236ae23aa7497419bfca2727c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac45918236ae23aa7497419bfca2727c6"></a>
+<tr class="memitem:a73ac5296d23cb54f780696d641572ac4"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; char *, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#a73ac5296d23cb54f780696d641572ac4">alloc_mixin</a> (const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;info, const <a class="el" href="classdynamix_1_1object.html">object</a> *obj)=0</td></tr>
+<tr class="separator:a73ac5296d23cb54f780696d641572ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c2c62a4e6fb0adeee2fcdd07542b38"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#a83c2c62a4e6fb0adeee2fcdd07542b38">dealloc_mixin</a> (char *ptr, size_t <a class="el" href="classdynamix_1_1mixin__allocator.html#a0dbae92a126753ed00f32275629d3f41">mixin_offset</a>, const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;info, const <a class="el" href="classdynamix_1_1object.html">object</a> *obj)=0</td></tr>
+<tr class="separator:a83c2c62a4e6fb0adeee2fcdd07542b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ae66997483b21213241293341db6b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#a71ae66997483b21213241293341db6b9">construct_mixin</a> (const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;info, void *ptr)</td></tr>
+<tr class="separator:a71ae66997483b21213241293341db6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad238b36d91c91b546795d1cd7d4fce70"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#ad238b36d91c91b546795d1cd7d4fce70">copy_construct_mixin</a> (const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;info, void *ptr, const void *source)</td></tr>
+<tr class="separator:ad238b36d91c91b546795d1cd7d4fce70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf10a70772e410a2c0b526d3a75c2493"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#acf10a70772e410a2c0b526d3a75c2493">destroy_mixin</a> (const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;info, void *ptr) noexcept</td></tr>
+<tr class="separator:acf10a70772e410a2c0b526d3a75c2493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17bd5e7afc6d8b376035dfaea695114"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa17bd5e7afc6d8b376035dfaea695114"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_allocated</b> () const </td></tr>
-<tr class="separator:ac45918236ae23aa7497419bfca2727c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa17bd5e7afc6d8b376035dfaea695114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abe867b6e7e4c2497fbfe1f420e0787b2"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1global__allocator.html#abe867b6e7e4c2497fbfe1f420e0787b2">calculate_mem_size_for_mixin</a> (size_t mixin_size, size_t mixin_alignment)</td></tr>
-<tr class="separator:abe867b6e7e4c2497fbfe1f420e0787b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a31f7158cbab48a02eb1601a1d32171"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1global__allocator.html#a0a31f7158cbab48a02eb1601a1d32171">calculate_mixin_offset</a> (const char *buffer, size_t mixin_alignment)</td></tr>
-<tr class="separator:a0a31f7158cbab48a02eb1601a1d32171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a62df266a482dbe66dd81a043695477b5"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1global__allocator.html#a62df266a482dbe66dd81a043695477b5">mixin_data_size</a> = sizeof(<a class="el" href="classdynamix_1_1internal_1_1mixin__data__in__object.html">internal::mixin_data_in_object</a>)</td></tr>
-<tr class="separator:a62df266a482dbe66dd81a043695477b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae4f6addc744e1ae49bda2dbd9fef06"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#a5ae4f6addc744e1ae49bda2dbd9fef06">mem_size_for_mixin</a> (size_t mixin_size, size_t mixin_alignment)</td></tr>
+<tr class="separator:a5ae4f6addc744e1ae49bda2dbd9fef06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbae92a126753ed00f32275629d3f41"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1mixin__allocator.html#a0dbae92a126753ed00f32275629d3f41">mixin_offset</a> (const char *buffer, size_t mixin_alignment)</td></tr>
+<tr class="separator:a0dbae92a126753ed00f32275629d3f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad12c2cbc23f025ffbc34ccfcb9792d7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad12c2cbc23f025ffbc34ccfcb9792d7f"></a>
+<tr class="memitem:ac7cbba3a477a1384e657402d444a870f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7cbba3a477a1384e657402d444a870f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></td></tr>
-<tr class="separator:ad12c2cbc23f025ffbc34ccfcb9792d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac7cbba3a477a1384e657402d444a870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The class should be the parent to your custom mixin allocators, i.e. allocators that are set to mixins mixin as features.</p>
-<p>It's derived from <code>allocator</code>, and the difference between the two is that <code><a class="el" href="classdynamix_1_1mixin__allocator.html">mixin_allocator</a></code>, hides <code>alloc_mixin_data</code> and <code>dealloc_mixin_data</code>. </p>
+<div class="textblock"><p>This class should be the parent to your custom mixin allocators, i.e. allocators that are set to mixins as features. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abe867b6e7e4c2497fbfe1f420e0787b2"></a>
+<a class="anchor" id="a5ae4f6addc744e1ae49bda2dbd9fef06"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -160,7 +159,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t dynamix::global_allocator::calculate_mem_size_for_mixin </td>
+          <td class="memname">size_t dynamix::mixin_allocator::mem_size_for_mixin </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>mixin_size</em>, </td>
@@ -179,7 +178,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -188,7 +187,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
 
 </div>
 </div>
-<a class="anchor" id="a0a31f7158cbab48a02eb1601a1d32171"></a>
+<a class="anchor" id="a0dbae92a126753ed00f32275629d3f41"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -196,7 +195,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static size_t dynamix::global_allocator::calculate_mixin_offset </td>
+          <td class="memname">size_t dynamix::mixin_allocator::mixin_offset </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -215,7 +214,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -224,7 +223,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
 
 </div>
 </div>
-<a class="anchor" id="a864dab150684539600ae86a732346e6d"></a>
+<a class="anchor" id="a73ac5296d23cb54f780696d641572ac4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -232,28 +231,16 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dynamix::global_allocator::alloc_mixin </td>
+          <td class="memname">virtual std::pair&lt;char*, size_t&gt; dynamix::mixin_allocator::alloc_mixin </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mixin_size</em>, </td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>mixin_alignment</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&amp;&#160;</td>
-          <td class="paramname"><em>out_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>out_mixin_offset</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1object.html">object</a> *&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -263,19 +250,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pure virtual. Should return memory for a mixin instance. The library will request a buffer in which to put the mixin. Overrides of this method should fill the output parameters with the address of the allocated memory and the offset of the mixin (according to the alignment) BUT IN SUCH A WAY AS TO ALLOW A POINTER TO BE PLACED IN FRONT</p>
-<p>You may use <code>calculate_mem_size_for_mixin</code> and <code>calculate_mixin_offset</code> if you're not sure what to do.</p>
-<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> your_allocator::alloc_mixin(<span class="keywordtype">size_t</span> mixin_size, <span class="keywordtype">size_t</span> mixin_alignment, <span class="keywordtype">char</span>*&amp; out_buffer, <span class="keywordtype">size_t</span>&amp; out_mixin_offset)</div><div class="line">{</div><div class="line">    <span class="keywordtype">size_t</span> mem_size = <a class="code" href="classdynamix_1_1global__allocator.html#abe867b6e7e4c2497fbfe1f420e0787b2">calculate_mem_size_for_mixin</a>(mixin_size, mixin_alignment);</div><div class="line">    out_buffer = <span class="keyword">new</span> <span class="keywordtype">char</span>[mem_size];</div><div class="line"></div><div class="line">    out_mixin_offset = <a class="code" href="classdynamix_1_1global__allocator.html#a0a31f7158cbab48a02eb1601a1d32171">calculate_mixin_offset</a>(out_buffer, mixin_alignment);</div><div class="line">}</div></div><!-- fragment --> </dd></dl>
+<p>Pure virtual. Returns a buffer of memory and the offset of the mixin within it (according to the alignment) BUT IN SUCH A WAY AS TO ALLOW A POINTER TO BE PLACED IN FRONT</p>
+<p>You may use <code>mem_size_for_mixin</code> and <code>mixin_offset</code> if you're not sure what to do.</p>
+<dl class="section user"><dt>Example:</dt><dd><div class="fragment"><div class="line">std::pair&lt;char*, size_t&gt; your_allocator::alloc_mixin(<span class="keyword">const</span> basic_mixin_type_info&amp; info, <span class="keyword">const</span> <span class="keywordtype">object</span>*)</div><div class="line">{</div><div class="line">    <span class="keywordtype">size_t</span> mem_size = <a class="code" href="classdynamix_1_1mixin__allocator.html#a5ae4f6addc744e1ae49bda2dbd9fef06">mem_size_for_mixin</a>(info.size, info.alignment);</div><div class="line">    <span class="keyword">auto</span> buffer = <span class="keyword">new</span> <span class="keywordtype">char</span>[mem_size];</div><div class="line">    <span class="keywordflow">return</span> make_pair(buffer, <a class="code" href="classdynamix_1_1mixin__allocator.html#a0dbae92a126753ed00f32275629d3f41">mixin_offset</a>(buffer, info.alignment));</div><div class="line">}</div></div><!-- fragment --> </dd></dl>
 
-<p>Implemented in <a class="el" href="classdynamix_1_1internal_1_1default__allocator.html#acdb287ebb883e915398138d87a6664a7">dynamix::internal::default_allocator</a>.</p>
+<p>Implemented in <a class="el" href="classdynamix_1_1internal_1_1default__allocator.html#a1b24c6e5a4414e34f62a0edfbba5ba8b">dynamix::internal::default_allocator</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a739434366f136363c5da4de22c86918f"></a>
+<a class="anchor" id="a83c2c62a4e6fb0adeee2fcdd07542b38"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -283,27 +270,48 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dynamix::global_allocator::dealloc_mixin </td>
+          <td class="memname">virtual void dynamix::mixin_allocator::dealloc_mixin </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mixin_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1object.html">object</a> *&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pure virtual. Should free the memory that has been obtained via a call to <code>alloc_mixin</code>. </p>
+<p>Pure virtual. Should free the memory that has been obtained via a call to <code>alloc_mixin</code>. The library will call the method with the same mixin type info which was used to allocate it previously and also with the offset which was returned by the allocation. </p>
 
-<p>Implemented in <a class="el" href="classdynamix_1_1internal_1_1default__allocator.html#a35a2c46483b39b38c27e1e2030099053">dynamix::internal::default_allocator</a>.</p>
+<p>Implemented in <a class="el" href="classdynamix_1_1internal_1_1default__allocator.html#a16fe663b26eee70d0d74a961b40a0e6c">dynamix::internal::default_allocator</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a62df266a482dbe66dd81a043695477b5"></a>
+<a class="anchor" id="a71ae66997483b21213241293341db6b9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -311,17 +319,106 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t dynamix::global_allocator::mixin_data_size = sizeof(<a class="el" href="classdynamix_1_1internal_1_1mixin__data__in__object.html">internal::mixin_data_in_object</a>)</td>
+          <td class="memname">virtual void dynamix::mixin_allocator::construct_mixin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Size of <code>mixin_data_in_object</code></p>
-<p>Use this to determine how many bytes you'll allocate for single mixin data in <code>alloc_mixin_data</code> </p>
+<p>Virtual function, which constructs a mixin within a memory buffer. The default implementation calls the default constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad238b36d91c91b546795d1cd7d4fce70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool dynamix::mixin_allocator::copy_construct_mixin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual function, which copy-constructs a mixin within a memory buffer, from a given source. Should return false if the copy-construction failed. The default implementation calls the default copy constructor and returns false if none exists. </p>
+
+</div>
+</div>
+<a class="anchor" id="acf10a70772e410a2c0b526d3a75c2493"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dynamix::mixin_allocator::destroy_mixin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdynamix_1_1basic__mixin__type__info.html">basic_mixin_type_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual function, which destroys a mixin from a given buffer. The default implementation calls the destructor. </p>
 
 </div>
 </div>
@@ -334,7 +431,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_has_allocated</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>dynamix</b></li><li class="navelem"><a class="el" href="classdynamix_1_1mixin__allocator.html">mixin_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 28 2017 10:56:43 for DynaMix by
+    <li class="footer">Generated on Tue Dec 19 2017 22:26:08 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.3</span>
+   &#160;<span id="projectnumber">1.3.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -128,7 +128,7 @@ Objects </h1>
 <h1><a class="anchor" id="mixin"></a>
 Mixins </h1>
 <p>A mixin is a class used as a "building block" for an object. In DynaMix a mixin doesn't have a specified type. It's the job of the library's users to define their own mixin types. There are several macros that you need to use in order to "tell" the library that one of your classes should be accepted as a mixin. The macros are non-intrusive and you don't need to change anything in existing code, to which you want to add DynaMix.</p>
-<p>Once you have mixins, you can combine them into objects. Adding or removing mixins to an object will internally instantiate them (via their default constructor) or destroy them. This means that a mixin instance is bound to an object instance. While it can be accessed via <code><a class="el" href="classdynamix_1_1object.html#af9c81f8a4905785e36e5e66034584776">dynamix::object::get</a></code>, the mixin instance cannot be "removed" from an object while also preserving it. Objects cannot share mixin instances and only a single instance of mixin can be bound to an object.</p>
+<p>Once you have mixins, you can combine them into objects. Adding or removing mixins to an object will internally instantiate them (via their default constructor) or destroy them. This means that a mixin instance is bound to an object instance. While it can be accessed via <code><a class="el" href="classdynamix_1_1object.html#a3ac87d5fed5273a72e40cff82fe0a2c5">dynamix::object::get</a></code>, the mixin instance cannot be "removed" from an object while also preserving it. Objects cannot share mixin instances and only a single instance of mixin can be bound to an object.</p>
 <p>You can think of mixins as the multiple parents of a class, when using multiple inheritance. Only in the case of DynaMix, they can be added and removed dynamically, while preserving the state of the rest.</p>
 <h1><a class="anchor" id="message"></a>
 Messages </h1>
@@ -170,7 +170,7 @@ Mutation rules </h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 28 2017 10:56:42 for DynaMix by
+    <li class="footer">Generated on Tue Dec 19 2017 22:26:06 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

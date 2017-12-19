@@ -1,16 +1,17 @@
 var classdynamix_1_1internal_1_1mixin__type__info =
 [
     [ "mixin_type_info", "classdynamix_1_1internal_1_1mixin__type__info.html#ae0ee98b50c3737157d76f73bf4f514a1", null ],
-    [ "is_valid", "classdynamix_1_1internal_1_1mixin__type__info.html#a5a068c42b1173a076094fcff4d15a3f3", null ],
-    [ "id", "classdynamix_1_1internal_1_1mixin__type__info.html#a2c5fa450a70cca86b710df4f6180029b", null ],
-    [ "name", "classdynamix_1_1internal_1_1mixin__type__info.html#ac4dc525e09cf9df4da5833995948da5b", null ],
-    [ "size", "classdynamix_1_1internal_1_1mixin__type__info.html#ae7bba8ac4b18b9b08be76be366111548", null ],
-    [ "alignment", "classdynamix_1_1internal_1_1mixin__type__info.html#af70d8750ac21973123d14b4db982f541", null ],
-    [ "constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#a8be3083f8dba7e25566c3a111cb492b4", null ],
-    [ "destructor", "classdynamix_1_1internal_1_1mixin__type__info.html#aa27750ab098f959f79602ed834399cab", null ],
-    [ "copy_constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#a91e2b520b71d97cb9800a89157246ff9", null ],
+    [ "is_valid", "classdynamix_1_1internal_1_1mixin__type__info.html#af32f17b3ab10c2c185f9ad4344b7aaab", null ],
     [ "copy_assignment", "classdynamix_1_1internal_1_1mixin__type__info.html#ae71a9308193b2ac26e9b2004549a99df", null ],
+    [ "move_constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#aa80d615f441c33d197af4e7caf069071", null ],
     [ "message_infos", "classdynamix_1_1internal_1_1mixin__type__info.html#a7f8a15e5a02a2128989766a9cb90f755", null ],
-    [ "allocator", "classdynamix_1_1internal_1_1mixin__type__info.html#a6cd90cb7dd7cbdab45fcee95b0fe8fb8", null ],
-    [ "num_mixins", "classdynamix_1_1internal_1_1mixin__type__info.html#ac219b989115af393070051b988632c35", null ]
+    [ "id", "classdynamix_1_1internal_1_1mixin__type__info.html#a248d0082a9e56700c4b20807748c0702", null ],
+    [ "name", "classdynamix_1_1internal_1_1mixin__type__info.html#a39fd3a0e6326f115641e26bdc81e8f32", null ],
+    [ "size", "classdynamix_1_1internal_1_1mixin__type__info.html#a11a0c2b963dc5568cf3d7e8c9460c2cd", null ],
+    [ "alignment", "classdynamix_1_1internal_1_1mixin__type__info.html#a5b05be1cdceb2852f4bf19f56eb90f21", null ],
+    [ "allocator", "classdynamix_1_1internal_1_1mixin__type__info.html#a88aa899584ee582d66fe1e5410a2f97c", null ],
+    [ "constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#a83748c007b8ab74dc876080fb1d84f8a", null ],
+    [ "destructor", "classdynamix_1_1internal_1_1mixin__type__info.html#a9b51330e4f3f63549430239e7ba4cc15", null ],
+    [ "copy_constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#ad63f3373877978a38931aeaa980d9bb6", null ],
+    [ "num_mixins", "classdynamix_1_1internal_1_1mixin__type__info.html#af5e4098ffa00049288cf73f174081b81", null ]
 ];

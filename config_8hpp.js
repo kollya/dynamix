@@ -8,5 +8,6 @@ var config_8hpp =
     [ "DYNAMIX_OBJECT_IMPLICIT_COPY", "config_8hpp.html#a82791e5821772e5c4b57dd5fa0265250", null ],
     [ "DYNAMIX_THREAD_SAFE_MUTATIONS", "config_8hpp.html#a088f254afce4932ca6098c71aea0a0cd", null ],
     [ "DYNAMIX_ADDITIONAL_METRICS", "config_8hpp.html#a7caea653c4952334c2860e6c2318cd98", null ],
+    [ "DYNAMIX_OBJECT_REPLACE_MIXIN", "config_8hpp.html#a978a893b0b5311acd60b67e67a3ac72e", null ],
     [ "DYNAMIX_API", "config_8hpp.html#a8350b5213f8b785413fee4bfaafd7be1", null ]
 ];

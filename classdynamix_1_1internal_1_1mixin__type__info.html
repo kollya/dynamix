@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.3</span>
+   &#160;<span id="projectnumber">1.3.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -118,46 +118,136 @@ $(document).ready(function(){initNavTree('classdynamix_1_1internal_1_1mixin__typ
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a068c42b1173a076094fcff4d15a3f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a068c42b1173a076094fcff4d15a3f3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_valid</b> () const </td></tr>
-<tr class="separator:a5a068c42b1173a076094fcff4d15a3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32f17b3ab10c2c185f9ad4344b7aaab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af32f17b3ab10c2c185f9ad4344b7aaab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#af32f17b3ab10c2c185f9ad4344b7aaab">is_valid</a> () const </td></tr>
+<tr class="memdesc:af32f17b3ab10c2c185f9ad4344b7aaab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows whether this is as initialized mixin type. <br /></td></tr>
+<tr class="separator:af32f17b3ab10c2c185f9ad4344b7aaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2c5fa450a70cca86b710df4f6180029b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c5fa450a70cca86b710df4f6180029b"></a>
-mixin_id&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
-<tr class="separator:a2c5fa450a70cca86b710df4f6180029b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4dc525e09cf9df4da5833995948da5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4dc525e09cf9df4da5833995948da5b"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="separator:ac4dc525e09cf9df4da5833995948da5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7bba8ac4b18b9b08be76be366111548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7bba8ac4b18b9b08be76be366111548"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
-<tr class="separator:ae7bba8ac4b18b9b08be76be366111548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70d8750ac21973123d14b4db982f541"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af70d8750ac21973123d14b4db982f541"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>alignment</b></td></tr>
-<tr class="separator:af70d8750ac21973123d14b4db982f541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be3083f8dba7e25566c3a111cb492b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8be3083f8dba7e25566c3a111cb492b4"></a>
-mixin_constructor_proc&#160;</td><td class="memItemRight" valign="bottom"><b>constructor</b></td></tr>
-<tr class="separator:a8be3083f8dba7e25566c3a111cb492b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27750ab098f959f79602ed834399cab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa27750ab098f959f79602ed834399cab"></a>
-mixin_destructor_proc&#160;</td><td class="memItemRight" valign="bottom"><b>destructor</b></td></tr>
-<tr class="separator:aa27750ab098f959f79602ed834399cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e2b520b71d97cb9800a89157246ff9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91e2b520b71d97cb9800a89157246ff9"></a>
-mixin_copy_proc&#160;</td><td class="memItemRight" valign="bottom"><b>copy_constructor</b></td></tr>
-<tr class="separator:a91e2b520b71d97cb9800a89157246ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae71a9308193b2ac26e9b2004549a99df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae71a9308193b2ac26e9b2004549a99df"></a>
 mixin_copy_proc&#160;</td><td class="memItemRight" valign="bottom"><b>copy_assignment</b></td></tr>
 <tr class="separator:ae71a9308193b2ac26e9b2004549a99df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80d615f441c33d197af4e7caf069071"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa80d615f441c33d197af4e7caf069071"></a>
+mixin_move_proc&#160;</td><td class="memItemRight" valign="bottom"><b>move_constructor</b></td></tr>
+<tr class="separator:aa80d615f441c33d197af4e7caf069071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f8a15e5a02a2128989766a9cb90f755"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f8a15e5a02a2128989766a9cb90f755"></a>
 std::vector&lt; <a class="el" href="structdynamix_1_1internal_1_1message__for__mixin.html">message_for_mixin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>message_infos</b></td></tr>
 <tr class="separator:a7f8a15e5a02a2128989766a9cb90f755"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cd90cb7dd7cbdab45fcee95b0fe8fb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cd90cb7dd7cbdab45fcee95b0fe8fb8"></a>
-<a class="el" href="classdynamix_1_1global__allocator.html">global_allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>allocator</b></td></tr>
-<tr class="separator:a6cd90cb7dd7cbdab45fcee95b0fe8fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac219b989115af393070051b988632c35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac219b989115af393070051b988632c35"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_mixins</b></td></tr>
-<tr class="separator:ac219b989115af393070051b988632c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248d0082a9e56700c4b20807748c0702"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a248d0082a9e56700c4b20807748c0702"></a>
+mixin_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a248d0082a9e56700c4b20807748c0702">id</a></td></tr>
+<tr class="memdesc:a248d0082a9e56700c4b20807748c0702"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mixin's id. <br /></td></tr>
+<tr class="separator:a248d0082a9e56700c4b20807748c0702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fd3a0e6326f115641e26bdc81e8f32"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a39fd3a0e6326f115641e26bdc81e8f32">name</a></td></tr>
+<tr class="separator:a39fd3a0e6326f115641e26bdc81e8f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a0c2b963dc5568cf3d7e8c9460c2cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11a0c2b963dc5568cf3d7e8c9460c2cd"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a11a0c2b963dc5568cf3d7e8c9460c2cd">size</a></td></tr>
+<tr class="memdesc:a11a0c2b963dc5568cf3d7e8c9460c2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the mixin type. <br /></td></tr>
+<tr class="separator:a11a0c2b963dc5568cf3d7e8c9460c2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b05be1cdceb2852f4bf19f56eb90f21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b05be1cdceb2852f4bf19f56eb90f21"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a5b05be1cdceb2852f4bf19f56eb90f21">alignment</a></td></tr>
+<tr class="memdesc:a5b05be1cdceb2852f4bf19f56eb90f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alignment of the mixin type. <br /></td></tr>
+<tr class="separator:a5b05be1cdceb2852f4bf19f56eb90f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88aa899584ee582d66fe1e5410a2f97c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdynamix_1_1mixin__allocator.html">mixin_allocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a88aa899584ee582d66fe1e5410a2f97c">allocator</a></td></tr>
+<tr class="separator:a88aa899584ee582d66fe1e5410a2f97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83748c007b8ab74dc876080fb1d84f8a"><td class="memItemLeft" align="right" valign="top">mixin_constructor_proc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a83748c007b8ab74dc876080fb1d84f8a">constructor</a></td></tr>
+<tr class="separator:a83748c007b8ab74dc876080fb1d84f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b51330e4f3f63549430239e7ba4cc15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b51330e4f3f63549430239e7ba4cc15"></a>
+mixin_destructor_proc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#a9b51330e4f3f63549430239e7ba4cc15">destructor</a></td></tr>
+<tr class="memdesc:a9b51330e4f3f63549430239e7ba4cc15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure which calls the destructor of a mixin. Never null. <br /></td></tr>
+<tr class="separator:a9b51330e4f3f63549430239e7ba4cc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63f3373877978a38931aeaa980d9bb6"><td class="memItemLeft" align="right" valign="top">mixin_copy_proc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#ad63f3373877978a38931aeaa980d9bb6">copy_constructor</a></td></tr>
+<tr class="separator:ad63f3373877978a38931aeaa980d9bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e4098ffa00049288cf73f174081b81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5e4098ffa00049288cf73f174081b81"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdynamix_1_1basic__mixin__type__info.html#af5e4098ffa00049288cf73f174081b81">num_mixins</a></td></tr>
+<tr class="memdesc:af5e4098ffa00049288cf73f174081b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of "living" mixins of this type. <br /></td></tr>
+<tr class="separator:af5e4098ffa00049288cf73f174081b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a39fd3a0e6326f115641e26bdc81e8f32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* dynamix::basic_mixin_type_info::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The mixin name: The class name or, in case <code>DYNAMIX_USE_TYPEID</code> is false, the name returned from <code>dynamix_mixin_name</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a88aa899584ee582d66fe1e5410a2f97c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdynamix_1_1mixin__allocator.html">mixin_allocator</a>* dynamix::basic_mixin_type_info::allocator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allocator associated with this mixin type. If no special one was provided this will be equal to the allocator of the domain. </p>
+
+</div>
+</div>
+<a class="anchor" id="a83748c007b8ab74dc876080fb1d84f8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mixin_constructor_proc dynamix::basic_mixin_type_info::constructor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Procedure which calls the default constructor of a mixin. Might be left null if the mixin is not default-constructible. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad63f3373877978a38931aeaa980d9bb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mixin_copy_proc dynamix::basic_mixin_type_info::copy_constructor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Procedutre which calls the copy-constructor of a mixin. Might be left null for mixins which aren't copy-constructible </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="mixin__type__info_8hpp.html">mixin_type_info.hpp</a></li>
 </ul>
@@ -167,7 +257,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_mixins</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>dynamix</b></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="classdynamix_1_1internal_1_1mixin__type__info.html">mixin_type_info</a></li>
-    <li class="footer">Generated on Sat Oct 28 2017 10:56:45 for DynaMix by
+    <li class="footer">Generated on Tue Dec 19 2017 22:26:10 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

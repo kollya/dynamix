@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.2.3</span>
+   &#160;<span id="projectnumber">1.3.0</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -150,7 +150,8 @@ Configuration </h2>
 <li>Mutating an object in one thread and calling messages for this object in another is never safe.</li>
 </ul>
 </li>
-<li><code>DYNAMIX_ADDITIONAL_METRICS</code>  allows the access to some useful metrics about the library's usage such as number of "living" objects or mixins of a given type.</li>
+<li><code>DYNAMIX_ADDITIONAL_METRICS</code> &ndash; allows the access to some useful metrics about the library's usage such as number of "living" objects or mixins of a given type.</li>
+<li><code>DYNAMIX_OBJECT_REPLACE_MIXIN</code> &ndash; enables <code>object::move_mixin</code>, <code>object::hard_replace_mixin</code> and <code>object::reallocate_mixins</code>, which allow users to replace mixins within an object. These functions can be dangerous as pointers to mixins within an object will become invalid if the mixin is replaced, so users which never use them, may decide to disable them.</li>
 </ul>
 <p>If you don't want to edit <code><a class="el" href="config_8hpp.html">config.hpp</a></code> in the library source (or you're using it as a submodule and can't edit it), you can add a custom configuration file by defining <code>DYNAMIX_CUSTOM_CONFIG_FILE</code> when building and using the library. Define it to a string containing you own configuration, which can define any (or all) of the above options. If you're using CMake to build the library you can add <code>-DDYNAMIX_CUSTOM_CONFIG_FILE="path/to/your/file.hpp"</code> to your command line to set the custom configuration header.</p>
 <h1><a class="anchor" id="using"></a>
@@ -169,7 +170,7 @@ Contacts </h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 28 2017 10:56:42 for DynaMix by
+    <li class="footer">Generated on Tue Dec 19 2017 22:26:06 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
