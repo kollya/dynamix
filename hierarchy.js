@@ -30,6 +30,11 @@ var hierarchy =
       ] ]
     ] ],
     [ "dynamix::internal::mixin_data_in_object", "classdynamix_1_1internal_1_1mixin__data__in__object.html", null ],
+    [ "dynamix::internal::msg_caller< Ret, Args >", "structdynamix_1_1internal_1_1msg__caller.html", null ],
+    [ "dynamix::internal::msg_caller< Ret, Args... >", "structdynamix_1_1internal_1_1msg__caller.html", [
+      [ "dynamix::internal::msg_multicast< Derived, Object, Ret, Args >", "structdynamix_1_1internal_1_1msg__multicast.html", null ],
+      [ "dynamix::internal::msg_unicast< Derived, Object, Ret, Args >", "structdynamix_1_1internal_1_1msg__unicast.html", null ]
+    ] ],
     [ "dynamix::mutation_rule", "classdynamix_1_1mutation__rule.html", [
       [ "dynamix::bundled_mixins", "classdynamix_1_1bundled__mixins.html", null ],
       [ "dynamix::dependent_mixins", "classdynamix_1_1dependent__mixins.html", null ],
@@ -50,7 +55,10 @@ var hierarchy =
         [ "dynamix::internal::mixin_type_info", "classdynamix_1_1internal_1_1mixin__type__info.html", null ]
       ] ],
       [ "dynamix::feature", "classdynamix_1_1feature.html", [
-        [ "dynamix::internal::message_t", "structdynamix_1_1internal_1_1message__t.html", null ]
+        [ "dynamix::internal::message_t", "structdynamix_1_1internal_1_1message__t.html", [
+          [ "dynamix::internal::msg_multicast< Derived, Object, Ret, Args >", "structdynamix_1_1internal_1_1msg__multicast.html", null ],
+          [ "dynamix::internal::msg_unicast< Derived, Object, Ret, Args >", "structdynamix_1_1internal_1_1msg__unicast.html", null ]
+        ] ]
       ] ],
       [ "dynamix::internal::domain", "classdynamix_1_1internal_1_1domain.html", null ],
       [ "dynamix::internal::mixin_type_info_instance< Mixin >", "structdynamix_1_1internal_1_1mixin__type__info__instance.html", null ],
