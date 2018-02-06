@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"roadmap.html":[9],
+"structdynamix_1_1internal_1_1feature__instance.html":[11,0,0,1,3],
+"structdynamix_1_1internal_1_1has__set__num__results.html":[11,0,0,1,6],
 "structdynamix_1_1internal_1_1message__feature__tag.html":[11,0,0,1,8],
 "structdynamix_1_1internal_1_1message__for__mixin.html":[11,0,0,1,9],
 "structdynamix_1_1internal_1_1message__for__mixin.html#a65b49dfcbfb0637024c1ad875df5b9f8":[11,0,0,1,9,4],

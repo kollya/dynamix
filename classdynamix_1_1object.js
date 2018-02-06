@@ -22,6 +22,8 @@ var classdynamix_1_1object =
     [ "get", "classdynamix_1_1object.html#acbe89fd26746a8ca385a25ca85645f3d", null ],
     [ "get", "classdynamix_1_1object.html#a62ea4645c14a1a0152c82a54aa0c5788", null ],
     [ "implements", "classdynamix_1_1object.html#add7fcb4b2dccc706910be410885bf9db", null ],
+    [ "implements_by_mixin", "classdynamix_1_1object.html#a76433f8aa846e5350980008bc730cd15", null ],
+    [ "implements_with_default", "classdynamix_1_1object.html#a50a943d3334af529c5f7fb476647e4d8", null ],
     [ "num_implementers", "classdynamix_1_1object.html#aa20ac173a4ee11c15874daf6ec76a6c4", null ],
     [ "clear", "classdynamix_1_1object.html#a938747ece074a97c6f23d7a986c5e126", null ],
     [ "empty", "classdynamix_1_1object.html#a7ae8e362361934b85ccf8b30d9ecc3d2", null ],
