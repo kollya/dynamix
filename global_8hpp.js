@@ -1,6 +1,5 @@
 var global_8hpp =
 [
-    [ "noncopyable", "structdynamix_1_1internal_1_1noncopyable.html", "structdynamix_1_1internal_1_1noncopyable" ],
     [ "_dynamix_internal", "global_8hpp.html#ac1392f51b34bb0946ffcdc906a3d8ded", null ],
     [ "mixin_id", "global_8hpp.html#a594594e74905e111b34fb11f133050e9", null ],
     [ "feature_id", "global_8hpp.html#a1963855524922c782cd4a9816b867ae9", null ],

@@ -2,6 +2,8 @@ var classdynamix_1_1mixin__collection =
 [
     [ "mixin_collection", "classdynamix_1_1mixin__collection.html#a82441059284494acbbb8572e6c41ce80", null ],
     [ "mixin_collection", "classdynamix_1_1mixin__collection.html#a96afbed679b102d57a68baadbac53e9c", null ],
+    [ "mixin_collection", "classdynamix_1_1mixin__collection.html#ae84b06493eda23017752a11bb2a2b135", null ],
+    [ "operator=", "classdynamix_1_1mixin__collection.html#aab1ebd43d0d3d656dc0dc99178b53fb4", null ],
     [ "has", "classdynamix_1_1mixin__collection.html#a81c9b2abd119452722b129e14166c843", null ],
     [ "has", "classdynamix_1_1mixin__collection.html#a793a9c42ca799b443cc7543521b825d6", null ],
     [ "add", "classdynamix_1_1mixin__collection.html#adc40b0c54adfbabc7321427a22f0a4b5", null ],

@@ -2,6 +2,8 @@ var classdynamix_1_1internal_1_1object__mutator =
 [
     [ "object_mutator", "classdynamix_1_1internal_1_1object__mutator.html#af66b1cfcdb532e9e6626111fe65abdaa", null ],
     [ "object_mutator", "classdynamix_1_1internal_1_1object__mutator.html#a29b02eab960d0b1502228f6ab6c4b73c", null ],
+    [ "object_mutator", "classdynamix_1_1internal_1_1object__mutator.html#a7a3a9384b694cc4a162f62fbf9a56834", null ],
+    [ "operator=", "classdynamix_1_1internal_1_1object__mutator.html#a0ef60564110d9e995673ab02ed785c68", null ],
     [ "add", "classdynamix_1_1internal_1_1object__mutator.html#afb29a784eab357ab585db324e9b52299", null ],
     [ "remove", "classdynamix_1_1internal_1_1object__mutator.html#ac4a77cdef31d85ed84ea9fa29b63469e", null ],
     [ "add", "classdynamix_1_1internal_1_1object__mutator.html#a7c4a68cb8cf08e041fd7e6fa56d5c08b", null ],
