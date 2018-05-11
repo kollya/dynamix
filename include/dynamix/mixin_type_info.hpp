@@ -65,9 +65,11 @@ public:
     /// Procedure which calls the destructor of a mixin. Never null.
     mixin_destructor_proc destructor;
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
     /// Procedutre which calls the copy-constructor of a mixin.
     /// Might be left null for mixins which aren't copy-constructible
     mixin_copy_proc copy_constructor;
+#endif
 
 #if DYNAMIX_ADDITIONAL_METRICS
     /// Number of "living" mixins of this type.
@@ -97,8 +99,10 @@ typedef void (*mixin_move_proc)(void* memory, void* source);
 class DYNAMIX_API mixin_type_info : public basic_mixin_type_info
 {
 public:
+#if DYNAMIX_ENABLE_OBJECT_COPY
     // might be left null for mixins which aren't copy-assignable
     mixin_copy_proc copy_assignment;
+#endif
 
     // might be left null for mixin which aren't move-constructible
     mixin_move_proc move_constructor;
@@ -158,6 +162,7 @@ void call_mixin_destructor(void* memory)
     reinterpret_cast<Mixin*>(memory)->~Mixin();
 }
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
 template <typename Mixin>
 void call_mixin_copy_constructor(void* memory, const void* source)
 {
@@ -197,6 +202,7 @@ typename std::enable_if<!std::is_copy_assignable<Mixin>::value,
 {
     return nullptr;
 }
+#endif
 
 template <typename Mixin>
 void call_mixin_move_constructor(void* memory, void* source)

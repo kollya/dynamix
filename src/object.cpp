@@ -217,6 +217,7 @@ bool object::make_mixin(mixin_id id, const void* source)
     }
     else
     {
+#if DYNAMIX_ENABLE_OBJECT_COPY
         if (!alloc->copy_construct_mixin(mixin_info, data.mixin(), source))
         {
             // so... we now have a problem
@@ -229,6 +230,10 @@ bool object::make_mixin(mixin_id id, const void* source)
             alloc->construct_mixin(mixin_info, data.mixin());
             return false;
         }
+#else
+        DYNAMIX_ASSERT_MSG(false, "Copying is disabled. This code must be unreachable");
+        return false;
+#endif
     }
 
     return true;

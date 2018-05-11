@@ -33,12 +33,14 @@ void mixin_allocator::construct_mixin(const basic_mixin_type_info& info, void* p
     info.constructor(ptr);
 }
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
 bool mixin_allocator::copy_construct_mixin(const basic_mixin_type_info& info, void* ptr, const void* source)
 {
     if (!info.copy_constructor) return false;
     info.copy_constructor(ptr, source);
     return true;
 }
+#endif
 
 void mixin_allocator::destroy_mixin(const basic_mixin_type_info& info, void* ptr) noexcept
 {

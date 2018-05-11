@@ -86,10 +86,12 @@ public:
     /// The default implementation calls the default constructor.
     virtual void construct_mixin(const basic_mixin_type_info& info, void* ptr);
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
     /// Virtual function, which copy-constructs a mixin within a memory buffer, from a given source.
     /// Should return false if the copy-construction failed.
     /// The default implementation calls the default copy constructor and returns false if none exists.
     virtual bool copy_construct_mixin(const basic_mixin_type_info& info, void* ptr, const void* source);
+#endif
 
     /// Virtual function, which destroys a mixin from a given buffer.
     /// The default implementation calls the destructor.
