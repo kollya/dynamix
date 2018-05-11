@@ -63,6 +63,14 @@
 #   define DYNAMIX_USE_EXCEPTIONS 1
 #endif
 
+// setting this to true will disable object copying whatsoever
+// fro now this is workaround for people who don't copy objects
+// and have issues with hidden non-copyability like the one described here
+// https://stackoverflow.com/questions/18404108/issue-with-is-copy-constructible
+#if !defined(DYNAMIX_ENABLE_OBJECT_COPY )
+#   define DYNAMIX_ENABLE_OBJECT_COPY 1
+#endif
+
 // setting this to true will cause the object type to have a copy constructor and a copy assignment operator
 // however it is set to false by default so as to prevent accidental copying of objects
 // explicit copying is still possible via object::copy_from or object::copy

@@ -85,14 +85,6 @@ object& object::operator=(const object& o)
 }
 #endif
 
-object object::copy() const
-{
-    object o;
-    o.copy_from(*this);
-    return o;
-}
-
-
 void* object::internal_get_mixin(mixin_id id)
 {
     return _mixin_data[_type_info->mixin_index(id)].mixin();
@@ -402,6 +394,14 @@ void object::usurp(object&& o) noexcept
     o._mixin_data = &null_mixin_data;
 }
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
+object object::copy() const
+{
+    object o;
+    o.copy_from(*this);
+    return o;
+}
+
 void object::copy_from(const object& o)
 {
     if (&o == this)
@@ -546,6 +546,7 @@ bool object::copyable() const noexcept
 
     return true;
 }
+#endif
 
 #if DYNAMIX_OBJECT_REPLACE_MIXIN
 

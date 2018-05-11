@@ -69,8 +69,13 @@ public:
         info.alignment = std::alignment_of<Mixin>::value;
         info.constructor = &call_mixin_constructor<Mixin>;
         info.destructor = &call_mixin_destructor<Mixin>;
+#if DYNAMIX_ENABLE_OBJECT_COPY
         info.copy_constructor = get_mixin_copy_constructor<Mixin>();
         info.copy_assignment = get_mixin_copy_assignment<Mixin>();
+#else
+        info.copy_constructor = nullptr;
+        info.copy_assignment = nullptr;
+#endif
         info.move_constructor = get_mixin_move_constructor<Mixin>();
         info.allocator = _allocator;
 

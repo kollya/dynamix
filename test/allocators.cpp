@@ -521,6 +521,7 @@ TEST_CASE("object allocator")
 
         CHECK(o2.allocator() == &alloc);
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
         {
             object o3;
             the_object = &o3;
@@ -529,6 +530,7 @@ TEST_CASE("object allocator")
             CHECK(!o3.allocator());
             CHECK(o2.allocator() == &alloc);
         }
+#endif
 
         the_object = &o2;
     }
@@ -537,10 +539,13 @@ TEST_CASE("object allocator")
     CHECK(object_allocator_a::data_deallocations == 3);
     CHECK(object_allocator_a::mixin_allocations == 8);
     CHECK(object_allocator_a::mixin_deallocations == 8);
+
+#if DYNAMIX_ENABLE_OBJECT_COPY
     CHECK(alloc_counter<custom_alloc_var>::mixin_allocations == 1);
     CHECK(alloc_counter<custom_alloc_var>::mixin_deallocations == 1);
     CHECK(alloc_counter<custom_alloc_1>::mixin_allocations == 1);
     CHECK(alloc_counter<custom_alloc_1>::mixin_deallocations == 1);
+#endif
 
     object_allocator_b alloc_b;
     {
@@ -561,6 +566,7 @@ TEST_CASE("object allocator")
 
         CHECK(o2.allocator() == &alloc_b);
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
         {
             object o3;
             the_object = &o3;
@@ -569,6 +575,7 @@ TEST_CASE("object allocator")
             CHECK(o3.allocator() == &alloc_b);
             CHECK(o2.allocator() == &alloc_b);
         }
+#endif
 
         object o4(&alloc_b);
 

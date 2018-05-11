@@ -44,7 +44,7 @@ public:
     /// Move assignment
     object& operator=(object&& o) noexcept;
 
-#if DYNAMIX_OBJECT_IMPLICIT_COPY
+#if DYNAMIX_ENABLE_OBJECT_COPY && DYNAMIX_OBJECT_IMPLICIT_COPY
     /// Copy constructor
     object(const object& o);
 
@@ -60,6 +60,7 @@ public:
     object& operator=(const object& o) = delete;
 #endif
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
     /// Explicit copy via move assignment
     /// This function is not recommended as it will slice the type if you have a class inherited from object
     object copy() const;
@@ -83,6 +84,7 @@ public:
     /// (note that there might be cases where copy_from or copy_matching_from won't throw
     /// even though this function returns false).
     bool copyable() const noexcept;
+#endif
 
     /////////////////////////////////////////////////////////////////
     // mixin info

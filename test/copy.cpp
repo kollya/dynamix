@@ -7,6 +7,8 @@
 //
 #include <dynamix/dynamix.hpp>
 
+#if DYNAMIX_ENABLE_OBJECT_COPY
+
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest/doctest.h"
 
@@ -228,3 +230,10 @@ TEST_CASE("obj_copy_ctor")
 }
 #endif
 
+#else
+int main()
+{
+    // tests not applicalble for this case
+    return 0;
+}
+#endif
