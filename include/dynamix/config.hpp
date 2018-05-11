@@ -68,7 +68,7 @@
 // and have issues with hidden non-copyability like the one described here
 // https://stackoverflow.com/questions/18404108/issue-with-is-copy-constructible
 #if !defined(DYNAMIX_ENABLE_OBJECT_COPY )
-#   define DYNAMIX_ENABLE_OBJECT_COPY 0
+#   define DYNAMIX_ENABLE_OBJECT_COPY 1
 #endif
 
 // setting this to true will cause the object type to have a copy constructor and a copy assignment operator
