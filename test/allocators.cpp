@@ -242,7 +242,7 @@ public:
     int x = 53;
 };
 
-#if DYNAMIX_OBJECT_REPLACE_MIXIN
+#if DYNAMIX_OBJECT_REPLACE_MIXIN && DYNAMIX_ENABLE_MIXIN_MOVE
 TEST_CASE("mixin replacement")
 {
     CHECK(alloc_counter<custom_alloc_1>::mixin_allocations == alloc_counter<custom_alloc_1>::mixin_deallocations);

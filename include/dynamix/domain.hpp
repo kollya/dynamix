@@ -72,8 +72,13 @@ public:
 #if DYNAMIX_ENABLE_OBJECT_COPY
         info.copy_constructor = get_mixin_copy_constructor<Mixin>();
         info.copy_assignment = get_mixin_copy_assignment<Mixin>();
+
 #endif
+#if DYNAMIX_ENABLE_MIXIN_MOVE
         info.move_constructor = get_mixin_move_constructor<Mixin>();
+#else
+        info.move_constructor = nullptr;
+#endif
         info.allocator = _allocator;
 
         internal_register_mixin_type(info);

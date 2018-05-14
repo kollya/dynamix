@@ -71,6 +71,10 @@
 #   define DYNAMIX_ENABLE_OBJECT_COPY 1
 #endif
 
+#if !defined(DYNAMIX_ENABLE_MIXIN_MOVE)
+#   define DYNAMIX_ENABLE_MIXIN_MOVE 1
+#endif
+
 // setting this to true will cause the object type to have a copy constructor and a copy assignment operator
 // however it is set to false by default so as to prevent accidental copying of objects
 // explicit copying is still possible via object::copy_from or object::copy
