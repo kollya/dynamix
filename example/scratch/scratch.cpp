@@ -20,9 +20,9 @@ class incopy
 public:
     incopy() = default;
     ~incopy() = default;
-    //incopy(const incopy&) = delete;
-    //incopy& operator=(const incopy&) = delete;
-    //incopy(incopy&&) = default;
+    incopy(const incopy&) = delete;
+    incopy& operator=(const incopy&) = delete;
+    incopy(incopy&&) = default;
     void boo() {}
 private:
     vector<unique_ptr<int>> test;
