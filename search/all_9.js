@@ -17,6 +17,7 @@ var searchData=
   ['mixin_5fcollection',['mixin_collection',['../classdynamix_1_1mixin__collection.html',1,'dynamix']]],
   ['mixin_5fdata_5fin_5fobject',['mixin_data_in_object',['../classdynamix_1_1internal_1_1mixin__data__in__object.html',1,'dynamix::internal']]],
   ['mixin_5fdata_5fsize',['mixin_data_size',['../classdynamix_1_1domain__allocator.html#aaa7f4d7abccd024aa10e4a55e4c4725c',1,'dynamix::domain_allocator']]],
+  ['mixin_5fname_5ffeature',['mixin_name_feature',['../structdynamix_1_1internal_1_1mixin__name__feature.html',1,'dynamix::internal']]],
   ['mixin_5foffset',['mixin_offset',['../classdynamix_1_1mixin__allocator.html#a0dbae92a126753ed00f32275629d3f41',1,'dynamix::mixin_allocator']]],
   ['mixin_5ftype_5finfo',['mixin_type_info',['../classdynamix_1_1internal_1_1mixin__type__info.html',1,'dynamix::internal']]],
   ['mixin_5ftype_5finfo_2ehpp',['mixin_type_info.hpp',['../mixin__type__info_8hpp.html',1,'']]],

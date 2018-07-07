@@ -9,5 +9,6 @@ var global_8hpp =
     [ "has_elem", "global_8hpp.html#a8e8fb234e100e62cfbd6309326298390", null ],
     [ "is_sorted", "global_8hpp.html#a1a44862f60082a65f611c1177d28ad6c", null ],
     [ "zero_memory", "global_8hpp.html#ab1049d92f3c16cf883fab80aa07ca171", null ],
-    [ "build_available_mixins_from", "global_8hpp.html#ab284a76dfe4cc910539c297d220c7509", null ]
+    [ "build_available_mixins_from", "global_8hpp.html#ab284a76dfe4cc910539c297d220c7509", null ],
+    [ "get_mixin_name_from_typeid", "global_8hpp.html#a5a899e836344242e12f4ae49ce18fbd5", null ]
 ];

@@ -12,6 +12,7 @@ var searchData=
   ['mixin_5fallocator',['mixin_allocator',['../classdynamix_1_1mixin__allocator.html',1,'dynamix']]],
   ['mixin_5fcollection',['mixin_collection',['../classdynamix_1_1mixin__collection.html',1,'dynamix']]],
   ['mixin_5fdata_5fin_5fobject',['mixin_data_in_object',['../classdynamix_1_1internal_1_1mixin__data__in__object.html',1,'dynamix::internal']]],
+  ['mixin_5fname_5ffeature',['mixin_name_feature',['../structdynamix_1_1internal_1_1mixin__name__feature.html',1,'dynamix::internal']]],
   ['mixin_5ftype_5finfo',['mixin_type_info',['../classdynamix_1_1internal_1_1mixin__type__info.html',1,'dynamix::internal']]],
   ['mixin_5ftype_5finfo_5finstance',['mixin_type_info_instance',['../structdynamix_1_1internal_1_1mixin__type__info__instance.html',1,'dynamix::internal']]],
   ['msg_5fcaller',['msg_caller',['../structdynamix_1_1internal_1_1msg__caller.html',1,'dynamix::internal']]],

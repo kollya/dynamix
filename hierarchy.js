@@ -47,6 +47,7 @@ var hierarchy =
       [ "dynamix::mutually_exclusive_mixins", "classdynamix_1_1mutually__exclusive__mixins.html", null ]
     ] ],
     [ "dynamix::internal::mixin_data_in_object", "classdynamix_1_1internal_1_1mixin__data__in__object.html", null ],
+    [ "dynamix::internal::mixin_name_feature", "structdynamix_1_1internal_1_1mixin__name__feature.html", null ],
     [ "dynamix::internal::mixin_type_info_instance< Mixin >", "structdynamix_1_1internal_1_1mixin__type__info__instance.html", null ],
     [ "dynamix::internal::msg_caller< Ret, Args >", "structdynamix_1_1internal_1_1msg__caller.html", null ],
     [ "dynamix::internal::msg_caller< Ret, Args... >", "structdynamix_1_1internal_1_1msg__caller.html", [
@@ -68,6 +69,7 @@ var hierarchy =
       [ "dynamix::mutually_exclusive_mixins", "classdynamix_1_1mutually__exclusive__mixins.html", null ]
     ] ],
     [ "dynamix::no_features_t", "structdynamix_1_1no__features__t.html", null ],
+    [ "dynamix::internal::noop_feature_t", "structdynamix_1_1internal_1_1noop__feature__t.html", null ],
     [ "dynamix::object", "classdynamix_1_1object.html", null ],
     [ "dynamix::internal::object_mutator", "classdynamix_1_1internal_1_1object__mutator.html", [
       [ "dynamix::object_type_template", "classdynamix_1_1object__type__template.html", null ],

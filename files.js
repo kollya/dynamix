@@ -28,6 +28,7 @@ var files =
       [ "feature_registrator", "classdynamix_1_1internal_1_1feature__registrator.html", "classdynamix_1_1internal_1_1feature__registrator" ],
       [ "feature_parser", "classdynamix_1_1internal_1_1feature__parser.html", "classdynamix_1_1internal_1_1feature__parser" ]
     ] ],
+    [ "features.hpp", "features_8hpp.html", "features_8hpp" ],
     [ "global.hpp", "global_8hpp.html", "global_8hpp" ],
     [ "message.hpp", "message_8hpp.html", "message_8hpp" ],
     [ "message_macros.hpp", "message__macros_8hpp.html", "message__macros_8hpp" ],

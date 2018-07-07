@@ -12,6 +12,7 @@ var NAVTREE =
       [ "Comparisons ", "index.html#comparisons", [
         [ "Comparison with multiple inheritance ", "index.html#multiple_inh", null ],
         [ "DynaMix as an entity-component-system ", "index.html#ecs", null ],
+        [ "Comparison with COM ", "index.html#com", null ],
         [ "Comparison with traits ", "index.html#traits", null ],
         [ "Comparison with Ruby mixins ", "index.html#ruby", null ]
       ] ]
@@ -132,8 +133,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classdynamix_1_1mutually__exclusive__mixins.html",
-"mutation__rule_8hpp.html#a756e2ea0f0d52be5a3315d8c3f90c54f"
+"classdynamix_1_1mixin__collection.html#add3604eb5cbe4fe5173da045baf27002",
+"mixin__type__info_8hpp.html#a7d377ebb67a8d4f831a6116ade41083b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.3.5</span>
+   &#160;<span id="projectnumber">1.3.6</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -140,7 +140,8 @@ Building the library </h1>
 Configuration </h2>
 <p>Here is a list of the configuration options from <code><a class="el" href="config_8hpp.html">config.hpp</a></code>. <em>You need to rebiuld the library if you change any of those</em>.</p>
 <ul>
-<li><code>DYNAMIX_USE_TYPEID</code> &ndash; determines the way by which the mixin class names are obtained by the library. The default value is nonzero which makes use of C++'s Runtime type information (RTTI): <code>typeid</code> and <code>type_info</code>. If you set it to zero, then, in order for your code to compile, every mixin type will need to have a public static method &ndash; <code>static const char* dynamix_mixin_name()</code> &ndash; which returns a unique string for a class.</li>
+<li><code>DYNAMIX_USE_TYPEID</code> &ndash; determines the way by which the mixin class names are obtained by the library. The default value is nonzero which makes use of C++'s Runtime type information (RTTI): <code>typeid</code> and <code>type_info</code>. If you set it to zero, then, in order for your code to compile, every mixin type will need to have the <code>mixin_name</code> feature with which the users set mixin names manually.</li>
+<li><code>DYNAMIX_USE_MIXIN_NAME_FROM_MACRO</code> &ndash; obtains mixin names automatically from the <code>DYNAMIX_DEFINE_MIXIN</code> macro. It can be used instead of RTTI but <em>does not</em> support mixins in namespaces.</li>
 <li><code>DYNAMIX_MAX_MIXINS</code> &ndash; determines the maximum number of mixins that can be registered in an application.</li>
 <li><code>DYNAMIX_MAX_MESSAGES</code> &ndash; determines the maximum number of messages that can be registered in an application.</li>
 <li><code>DYNAMIX_USE_EXCEPTIONS</code> &ndash; shows whether the library throws exceptions. You can disable this for a small performance gain.</li>
@@ -150,7 +151,7 @@ Configuration </h2>
 <li>Mutating an object in one thread and calling messages for this object in another is never safe.</li>
 </ul>
 </li>
-<li><code>DYNAMIX_ADDITIONAL_METRICS</code> &ndash; allows the access to some useful metrics about the library's usage such as number of "living" objects or mixins of a given type.</li>
+<li><code>DYNAMIX_ADDITIONAL_METRICS</code> &ndash; allows the access to some useful metrics about the library's usage such as number of mixins of a given type.</li>
 <li><code>DYNAMIX_OBJECT_REPLACE_MIXIN</code> &ndash; enables <code>object::move_mixin</code>, <code>object::hard_replace_mixin</code> and <code>object::reallocate_mixins</code>, which allow users to replace mixins within an object. These functions can be dangerous as pointers to mixins within an object will become invalid if the mixin is replaced, so users which never use them, may decide to disable them.</li>
 </ul>
 <p>If you don't want to edit <code><a class="el" href="config_8hpp.html">config.hpp</a></code> in the library source (or you're using it as a submodule and can't edit it), you can add a custom configuration file by defining <code>DYNAMIX_CUSTOM_CONFIG_FILE</code> when building and using the library. Define it to a string containing you own configuration, which can define any (or all) of the above options. If you're using CMake to build the library you can add <code>-DDYNAMIX_CUSTOM_CONFIG_FILE="path/to/your/file.hpp"</code> to your command line to set the custom configuration header.</p>
@@ -170,7 +171,7 @@ Contacts </h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 26 2018 22:57:48 for DynaMix by
+    <li class="footer">Generated on Sat Jul 7 2018 23:59:26 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

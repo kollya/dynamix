@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.3.5</span>
+   &#160;<span id="projectnumber">1.3.6</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -149,6 +149,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ae66ceabc3539912d108ac48461de4d12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66ceabc3539912d108ac48461de4d12"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>_DYNAMIX_VA_ARGS_PROXY</b>(MACRO,  args)&#160;&#160;&#160;MACRO args</td></tr>
 <tr class="separator:ae66ceabc3539912d108ac48461de4d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428c8b3a1cca126a5ba64988ec7a9334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a428c8b3a1cca126a5ba64988ec7a9334"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_DYNAMIX_GET_MIXIN_DATA</b>(obj,  id)&#160;&#160;&#160;reinterpret_cast&lt;char*&gt;(const_cast&lt;void*&gt;(obj._mixin_data[obj._type_info-&gt;_mixin_indices[id]].mixin()))</td></tr>
+<tr class="separator:a428c8b3a1cca126a5ba64988ec7a9334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087ed796dc1f79281ad4c034b91c22fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__macros_8hpp.html#a087ed796dc1f79281ad4c034b91c22fa">DYNAMIX_MESSAGE_N</a>(return_type,  message,  args)</td></tr>
 <tr class="separator:a087ed796dc1f79281ad4c034b91c22fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c4bb104e0fc7bd3bc62c7293750597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__macros_8hpp.html#a76c4bb104e0fc7bd3bc62c7293750597">DYNAMIX_DEFINE_MESSAGE_N_WITH_DEFAULT_IMPL</a>(return_type,  message_name,  args)</td></tr>
@@ -275,7 +278,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1311ec3b1f3820375d35d4193290438d.html">dynamix</a></li><li class="navelem"><a class="el" href="message__macros_8hpp.html">message_macros.hpp</a></li>
-    <li class="footer">Generated on Mon Mar 26 2018 22:57:48 for DynaMix by
+    <li class="footer">Generated on Sat Jul 7 2018 23:59:26 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

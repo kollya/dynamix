@@ -5,5 +5,7 @@ var classdynamix_1_1internal_1_1feature__parser =
     [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#aab05e7cca1e611f344321f06e5f0d872", null ],
     [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#a42f6067b038a35a8d5ac88a5b9c5c0bd", null ],
     [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#ae6853d805f1f1c8f786222c9407c8cf5", null ],
-    [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#a8fa5740eb1014f84907ecc35094be2e7", null ]
+    [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#a8fa5740eb1014f84907ecc35094be2e7", null ],
+    [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#afc307696e6ac0fc26177191ffcfa10f2", null ],
+    [ "operator&", "classdynamix_1_1internal_1_1feature__parser.html#ac6ba2860a884e4f72b03b617ec5cb445", null ]
 ];

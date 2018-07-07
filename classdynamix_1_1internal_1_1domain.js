@@ -13,5 +13,6 @@ var classdynamix_1_1internal_1_1domain =
     [ "mixin_info", "classdynamix_1_1internal_1_1domain.html#aeca1f5320cc428759a52bf2437e487a7", null ],
     [ "set_allocator", "classdynamix_1_1internal_1_1domain.html#a3002d7350af6e51c70e7966b4ced9c8c", null ],
     [ "allocator", "classdynamix_1_1internal_1_1domain.html#a3c769963383699bbf958975388ad568a", null ],
-    [ "get_mixin_id_by_name", "classdynamix_1_1internal_1_1domain.html#a7e861a8ed959af6881f4d5019a516898", null ]
+    [ "get_mixin_id_by_name", "classdynamix_1_1internal_1_1domain.html#a7e861a8ed959af6881f4d5019a516898", null ],
+    [ "garbage_collect_type_infos", "classdynamix_1_1internal_1_1domain.html#aa3cc9967abd655899fa562859466e24d", null ]
 ];

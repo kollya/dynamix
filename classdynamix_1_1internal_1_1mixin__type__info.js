@@ -13,5 +13,5 @@ var classdynamix_1_1internal_1_1mixin__type__info =
     [ "constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#a83748c007b8ab74dc876080fb1d84f8a", null ],
     [ "destructor", "classdynamix_1_1internal_1_1mixin__type__info.html#a9b51330e4f3f63549430239e7ba4cc15", null ],
     [ "copy_constructor", "classdynamix_1_1internal_1_1mixin__type__info.html#ad63f3373877978a38931aeaa980d9bb6", null ],
-    [ "num_mixins", "classdynamix_1_1internal_1_1mixin__type__info.html#af5e4098ffa00049288cf73f174081b81", null ]
+    [ "num_mixins", "classdynamix_1_1internal_1_1mixin__type__info.html#ad4a7c4790860fe9bbe213b18fdb464c6", null ]
 ];

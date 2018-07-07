@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DynaMix
-   &#160;<span id="projectnumber">1.3.5</span>
+   &#160;<span id="projectnumber">1.3.6</span>
    </div>
    <div id="projectbrief">A new take on polymorphism in C++</div>
   </td>
@@ -103,7 +103,20 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <div class="title">Revision History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>DynaMix 1.3.5 </h1>
+<div class="textblock"><h1>DynaMix 1.3.6 </h1>
+<p>Released: 2018 Jul 07</p>
+<ul>
+<li>New mixin feature <code>mixin_name</code> allows custom mixin names</li>
+<li>Fixed short message macros</li>
+<li>The metric <code>object_type_info::num_objects</code> is always on</li>
+<li>Domain has a method which frees resources for unused object type infos</li>
+<li>Allowed using the legacy message macros since clang and gcc may suffer increased compilation time with the new ones</li>
+<li>Fixed a variable shadowing warning in <a class="el" href="domain_8hpp.html">domain.hpp</a></li>
+<li>Added multi-threaded and mixin-in-namespace tests</li>
+<li>Added a compiler performance benchmark</li>
+<li>Improved build time of tests</li>
+</ul>
+<h1>DynaMix 1.3.5 </h1>
 <p>Released: 2018 Mar 26</p>
 <ul>
 <li>Fixed a leak with gcc and clang when reloading plugins</li>
@@ -230,7 +243,7 @@ $(document).ready(function(){initNavTree('revisions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 26 2018 22:57:48 for DynaMix by
+    <li class="footer">Generated on Sat Jul 7 2018 23:59:26 for DynaMix by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
