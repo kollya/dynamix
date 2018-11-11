@@ -27,7 +27,6 @@ var annotated_dup =
         [ "mixin_type_info", "classdynamix_1_1internal_1_1mixin__type__info.html", "classdynamix_1_1internal_1_1mixin__type__info" ],
         [ "mixin_type_info_instance", "structdynamix_1_1internal_1_1mixin__type__info__instance.html", "structdynamix_1_1internal_1_1mixin__type__info__instance" ],
         [ "msg_caller", "structdynamix_1_1internal_1_1msg__caller.html", "structdynamix_1_1internal_1_1msg__caller" ],
-        [ "msg_from_parent", "structdynamix_1_1internal_1_1msg__from__parent.html", null ],
         [ "msg_multicast", "structdynamix_1_1internal_1_1msg__multicast.html", "structdynamix_1_1internal_1_1msg__multicast" ],
         [ "msg_unicast", "structdynamix_1_1internal_1_1msg__unicast.html", "structdynamix_1_1internal_1_1msg__unicast" ],
         [ "noop_feature_t", "structdynamix_1_1internal_1_1noop__feature__t.html", null ],

@@ -31,9 +31,7 @@ var hierarchy =
     [ "dynamix::internal::message_for_mixin", "structdynamix_1_1internal_1_1message__for__mixin.html", null ],
     [ "dynamix::internal::message_perks< Message >", "structdynamix_1_1internal_1_1message__perks.html", null ],
     [ "dynamix::internal::message_registrator< Message >", "structdynamix_1_1internal_1_1message__registrator.html", null ],
-    [ "dynamix::internal::message_wrapper", "structdynamix_1_1internal_1_1message__wrapper.html", [
-      [ "dynamix::internal::msg_from_parent< Message, Parent >", "structdynamix_1_1internal_1_1msg__from__parent.html", null ]
-    ] ],
+    [ "dynamix::internal::message_wrapper", "structdynamix_1_1internal_1_1message__wrapper.html", null ],
     [ "dynamix::mixin_allocator", "classdynamix_1_1mixin__allocator.html", [
       [ "dynamix::domain_allocator", "classdynamix_1_1domain__allocator.html", [
         [ "dynamix::internal::default_allocator", "classdynamix_1_1internal_1_1default__allocator.html", null ],

@@ -17,7 +17,6 @@ var searchData=
   ['mixin_5ftype_5finfo_5finstance',['mixin_type_info_instance',['../structdynamix_1_1internal_1_1mixin__type__info__instance.html',1,'dynamix::internal']]],
   ['msg_5fcaller',['msg_caller',['../structdynamix_1_1internal_1_1msg__caller.html',1,'dynamix::internal']]],
   ['msg_5fcaller_3c_20ret_2c_20args_2e_2e_2e_20_3e',['msg_caller&lt; Ret, Args... &gt;',['../structdynamix_1_1internal_1_1msg__caller.html',1,'dynamix::internal']]],
-  ['msg_5ffrom_5fparent',['msg_from_parent',['../structdynamix_1_1internal_1_1msg__from__parent.html',1,'dynamix::internal']]],
   ['msg_5fmulticast',['msg_multicast',['../structdynamix_1_1internal_1_1msg__multicast.html',1,'dynamix::internal']]],
   ['msg_5funicast',['msg_unicast',['../structdynamix_1_1internal_1_1msg__unicast.html',1,'dynamix::internal']]],
   ['mutation_5frule',['mutation_rule',['../classdynamix_1_1mutation__rule.html',1,'dynamix']]],

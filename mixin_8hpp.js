@@ -1,6 +1,6 @@
 var mixin_8hpp =
 [
-    [ "_DYNAMIX_MIXIN_NAME_FEATURE", "mixin_8hpp.html#a638f138b5674c77a4a4cd1cb589d5ea6", null ],
+    [ "I_DYNAMIX_MIXIN_NAME_FEATURE", "mixin_8hpp.html#a3ed8fc088ef7c26a4e2279888c8d27ba", null ],
     [ "DYNAMIX_DECLARE_EXPORTED_MIXIN", "mixin_8hpp.html#ad7bfa4bb958e7bbc08afff1490f00222", null ],
     [ "DYNAMIX_DECLARE_MIXIN", "mixin_8hpp.html#acebfdad3adf70d4da7e221d7fdf8fb6d", null ],
     [ "DYNAMIX_DEFINE_MIXIN", "mixin_8hpp.html#ae96d7f5e4580604c41e932d1937b1c14", null ],
