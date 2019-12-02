@@ -13,6 +13,8 @@
 #include <dynamix/object.hpp>
 #endif
 
+#define d_unused(x) (void)(x)
+
 namespace dynamix
 {
 
@@ -44,12 +46,14 @@ void object_allocator::release(object&) noexcept
 object_allocator* object_allocator::on_copy_construct(object&, const object& source)
 {
     DYNAMIX_ASSERT(source.allocator() == this);
+    d_unused(source);
     return nullptr;
 }
 
 object_allocator* object_allocator::on_move(object&, object& source) noexcept
 {
     DYNAMIX_ASSERT(source.allocator() == this);
+    d_unused(source);
     return this;
 }
 

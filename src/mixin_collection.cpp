@@ -32,6 +32,7 @@ void mixin_collection::check_valid_mixin(const mixin_type_info& mixin_info)
     // this shouldn't be possible without a bug in the library
     // hence no throw
     DYNAMIX_ASSERT(mixin_info.is_valid());
+    (void)(mixin_info);
 }
 
 void mixin_collection::add(mixin_id id)
