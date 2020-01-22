@@ -50,7 +50,9 @@ option(DYNAMIX_BUILD_COMPILER_PERF "DynaMix: build compilation performance tests
 
 # config
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}) # so executables are next to the dll
+if(is_demo)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}) # so executables are next to the dll
+endif()
 
 # sources
 
